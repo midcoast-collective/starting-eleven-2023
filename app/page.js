@@ -56,6 +56,12 @@ const Projects = styled.div`
 
 const Project = styled.div`
   min-width: 0;
+
+  p:hover {
+    a {
+      margin-left: 0.25rem;
+    }
+  }
 `;
 
 const ProjectImageContainer = styled.a`
