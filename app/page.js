@@ -13,22 +13,11 @@ import ContactImage from "../public/contact.png";
 import Logo from "../public/logo_inverse.png";
 
 const IntroWrap = styled.div`
+  position: relative;
+  height: 100vh;
   background-color: black;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-`;
-
-const IntroLogo = styled.div`
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 400px;
-  height: 46px;
-  z-index: 2;
+  border-bottom: 1px solid var(--color-dark);
+  border-top: 1px solid var(--color-dark);
 `;
 
 const VideoContainer = styled.video`
@@ -166,32 +155,23 @@ export default function Home() {
 
   return (
     <main>
-      {introVisible && (
-        <IntroWrap onClick={() => console.log(false)}>
-          <IntroLogo>
-            <Image
-              alt="Starting Eleven"
-              fill
-              priority
-              src={Logo}
-              sizes="400px"
-              style={{ objectFit: "cover" }}
-            />
-          </IntroLogo>
-          <ResponsivePlayer
-            url="https://vimeo.com/854736625"
-            style={{
-              height: "100vh",
-              width: "200vh",
-              position: "absolute",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-          />
-        </IntroWrap>
-      )}
+      <IntroWrap>
+        <ResponsivePlayer
+          url="https://vimeo.com/854736625"
+          style={{
+            position: "absolute",
+            overflow: "hidden",
+            height: "100vh",
+            width: "200vh",
+            top: 0,
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 0,
+          }}
+        />
+      </IntroWrap>
 
-      <Wrap>
+      {/* <Wrap>
         <section>
           <Placeholder $image="/making-the-plane.png">
             <PlayButton>&#9658;</PlayButton>
@@ -329,7 +309,7 @@ export default function Home() {
             </ContactImageContainer>
           </Contact>
         </section>
-      </Wrap>
+      </Wrap> */}
     </main>
   );
 }
