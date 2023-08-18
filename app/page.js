@@ -10,7 +10,7 @@ import ProjectOneImage from "../public/making-the-plane.png";
 import AboutImage from "../public/about.png";
 import FieldImage from "../public/field.png";
 import ContactImage from "../public/contact.png";
-import Logo from "../public/logo.png";
+import Logo from "../public/logo_inverse.png";
 
 const IntroWrap = styled.div`
   background-color: black;
