@@ -167,7 +167,7 @@ export default function Home() {
   return (
     <main>
       {introVisible && (
-        <IntroWrap onClick={() => setIntroVisible(false)}>
+        <IntroWrap onClick={() => console.log(false)}>
           <IntroLogo>
             <Image
               alt="Starting Eleven"
