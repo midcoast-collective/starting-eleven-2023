@@ -1,15 +1,37 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
 import Wrap from "./components/wrap";
+import ResponsivePlayer from "./components/responsivePlayer";
 import ProjectOneImage from "../public/making-the-plane.png";
 import AboutImage from "../public/about.png";
 import FieldImage from "../public/field.png";
 import ContactImage from "../public/contact.png";
+import Logo from "../public/logo.png";
 
-const Video = styled.video`
+const IntroWrap = styled.div`
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+`;
+
+const IntroLogo = styled.div`
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 400px;
+  height: 46px;
+  z-index: 2;
+`;
+
+const VideoContainer = styled.video`
   height: auto;
   margin-top: 3rem;
   opacity: 0;
@@ -116,6 +138,8 @@ const ContactImageContainer = styled.div`
 `;
 
 export default function Home() {
+  const [introVisible, setIntroVisible] = useState(true);
+
   const PROJECTS = [
     {
       id: 1,
@@ -142,20 +166,40 @@ export default function Home() {
 
   return (
     <main>
+      {introVisible && (
+        <IntroWrap onClick={() => setIntroVisible(false)}>
+          <IntroLogo>
+            <Image
+              alt="Starting Eleven"
+              fill
+              priority
+              src={Logo}
+              sizes="400px"
+              style={{ objectFit: "cover" }}
+            />
+          </IntroLogo>
+          <ResponsivePlayer
+            url="https://vimeo.com/854736625"
+            style={{
+              height: "100vh",
+              width: "200vh",
+              position: "absolute",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          />
+        </IntroWrap>
+      )}
+
       <Wrap>
         <section>
           <Placeholder $image="/making-the-plane.png">
             <PlayButton>&#9658;</PlayButton>
           </Placeholder>
-
-          {/* <Video controls>
-            <source src="/making-the-plane.mp4" type="video/mp4" />
-          </Video> */}
         </section>
 
         <section id="about">
-          <SectionTitle>Why Us?</SectionTitle>
-
+          <SectionTitle>Why Us?</SectionTitle>\
           <About>
             <div>
               <p>
@@ -201,7 +245,6 @@ export default function Home() {
 
         <section>
           <SectionTitle>We are special</SectionTitle>
-
           <Special>
             <SpecialImageContainer>
               <Image
@@ -244,7 +287,6 @@ export default function Home() {
 
         <section id="projects">
           <SectionTitle>Projects</SectionTitle>
-
           <Projects>
             {PROJECTS.map(({ description, image, title }) => (
               <Project key={title}>

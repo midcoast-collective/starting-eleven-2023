@@ -53,7 +53,6 @@ export default function HeaderComponent() {
           <Image
             alt="Starting Eleven"
             fill
-            priority
             src={Logo}
             sizes="400px"
             style={{ objectFit: "cover" }}
