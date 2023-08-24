@@ -78,7 +78,7 @@ export default function HeaderComponent() {
             Contact
           </a> */}
           <p style={{ lineHeight: "3rem" }}>Coming soon...</p>
-          {/* <a className="icon" href="//instagram.com">
+          {/* <a className="icon" href="//www.instagram.com/startingeleven.us/">
             <svg
               role="img"
               viewBox="0 0 24 24"
