@@ -8,10 +8,15 @@ const ReactPlayer = dynamic(() => import("react-player/vimeo"), { ssr: false });
 
 // Player ratio: 100 / (1280 / 720)
 const PlayerWrapper = styled.div`
-  position: relative;
-  padding-top: 56.25%;
+  height: 0;
   opacity: ${({ $ready }) => ($ready ? 1 : 0)};
+  padding-top: 56.25%;
+  position: relative;
   transition: opacity 1000ms linear;
+
+  @media (max-width: 800px) {
+    padding-top: 177.75%;
+  }
 `;
 
 const ResponsivePlayer = ({ url, controls = false, style = {} }) => {
@@ -21,19 +26,19 @@ const ResponsivePlayer = ({ url, controls = false, style = {} }) => {
     <PlayerWrapper $ready={ready} style={style}>
       <ReactPlayer
         controls={controls}
+        height="100%"
         loop
         muted
+        onReady={() => setReady(true)}
         playing={true}
         playsinline
         url={url}
-        width="100%"
-        height="100%"
-        onReady={() => setReady(true)}
         style={{
           position: "absolute",
           top: 0,
           left: 0,
         }}
+        width="100%"
       />
     </PlayerWrapper>
   );
