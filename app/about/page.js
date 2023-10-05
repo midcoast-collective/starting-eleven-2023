@@ -8,7 +8,6 @@ import Wrap from "../components/wrap";
 import ProjectOneImage from "../../public/making-the-plane.png";
 import AboutImage from "../../public/about.png";
 import FieldImage from "../../public/field.png";
-// import ContactImage from "../../public/contact.png";
 
 const Placeholder = styled.div`
   align-items: center;
@@ -145,7 +144,7 @@ export default function AboutPage() {
 
       <Wrap>
         <section id="about">
-          <SectionTitle>Why Us?</SectionTitle>\
+          <SectionTitle>Why Us?</SectionTitle>
           <About>
             <div>
               <p>
