@@ -8,6 +8,7 @@ const ReactPlayer = dynamic(() => import("react-player/vimeo"), { ssr: false });
 
 // Player ratio: 100 / (1280 / 720)
 const PlayerWrapper = styled.div`
+  background-color: black;
   height: 0;
   opacity: ${({ $ready }) => ($ready ? 1 : 0)};
   padding-top: 56.25%;

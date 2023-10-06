@@ -315,7 +315,7 @@ export default function AboutPage() {
                 <br /> BTS: Jason Cadena
                 <br />
                 <br />
-                <a href="#0">More &rarr;</a>
+                <a href="/project/eafc/">More &rarr;</a>
               </p>
             </Project>
           </Special>
@@ -338,6 +338,7 @@ export default function AboutPage() {
                 </ProjectTitle>
 
                 <p dangerouslySetInnerHTML={{ __html: description }}></p>
+                <br />
                 <a href="/project/eafc/">More &rarr;</a>
               </Project>
             ))}
