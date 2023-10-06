@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 
@@ -19,8 +19,30 @@ const PlayerWrapper = styled.div`
   }
 `;
 
-const ResponsivePlayer = ({ url, controls = false, style = {} }) => {
+const ResponsivePlayer = ({
+  desktop,
+  mobile,
+  controls = false,
+  style = {},
+}) => {
+  const [source, setSource] = useState();
   const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    function setVideoSource() {
+      if (window.innerWidth < 800) {
+        setSource(mobile);
+      } else {
+        setSource(desktop);
+      }
+    }
+
+    window.addEventListener("resize", setVideoSource);
+
+    setVideoSource();
+
+    return () => window.removeEventListener("resize", setVideoSource);
+  }, [desktop, mobile]);
 
   return (
     <PlayerWrapper $ready={ready} style={style}>
@@ -32,7 +54,7 @@ const ResponsivePlayer = ({ url, controls = false, style = {} }) => {
         onReady={() => setReady(true)}
         playing={true}
         playsinline
-        url={url}
+        url={source}
         style={{
           position: "absolute",
           top: 0,

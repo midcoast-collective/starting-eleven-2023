@@ -1,10 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
 import styled from "styled-components";
-
-import Logo from "../../public/logo.png";
-import Link from "next/link";
 
 const Header = styled.header`
   border-bottom: 1px solid var(--color-dark);
@@ -62,14 +59,7 @@ export default function HeaderComponent() {
         <h1 className="sr-only">Starting Eleven</h1>
 
         <LogoWrap href="/">
-          <Image
-            alt="Starting Eleven"
-            fill
-            src={Logo}
-            sizes="400px"
-            style={{ objectFit: "cover" }}
-            priority
-          />
+          <img alt="Starting Eleven" src="/logo.png" />
         </LogoWrap>
 
         <Nav>

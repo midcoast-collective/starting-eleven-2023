@@ -1,19 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import Button from "@restart/ui/Button";
 import Modal from "@restart/ui/Modal";
 
 import ResponsivePlayer from "../components/responsivePlayer";
 import Wrap from "../components/wrap";
-import ProjectOneImage from "../../public/making-the-plane.png";
-import AboutImage from "../../public/about.png";
-import FieldImage from "../../public/field.png";
-import FeaturedProjectImage from "../../public/EAFC_BEASLEY_BTS-1020415.jpg";
-import ProjectImageSimons from "../../public/Xavi_Simons_Frames_1.34.2.jpg";
-import ProjectImageBreakaway from "../../public/MATEUSZ_KLICH_BREAKAWAY_MLS__TV_STARTING_ELEVEN_LAMOREAUX-4205.jpg";
 
 const Placeholder = styled.div`
   align-items: center;
@@ -55,29 +49,38 @@ const Projects = styled.div`
 const Project = styled.div`
   min-width: 0;
 
-  p:hover {
-    a {
-      margin-left: 0.25rem;
-    }
+  a:hover {
+    padding-left: 0.25rem;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 `;
 
 const ProjectImageContainer = styled.a`
   display: block;
-  height: 15rem;
+  height: 12rem;
   position: relative;
+  background-size: cover;
+  background-position: center;
 `;
 
 const ProjectTitle = styled.h3`
   border-bottom: 1px solid var(--color-dark);
   border-top: 1px solid var(--color-dark);
   color: var(--color-dark);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1;
   margin: 1.5rem 0 0.75rem;
   padding: 0.75rem 0;
   text-transform: uppercase;
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
 `;
 
 const FeaturedProjectTitle = styled(ProjectTitle)`
@@ -94,9 +97,13 @@ const About = styled.div`
 `;
 
 const AboutImageContainer = styled.div`
+  display: flex;
+  background-image: url(/about.png);
   height: 61.8vh;
   position: relative;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 `;
 
 const StyledModal = styled(Modal)`
@@ -138,15 +145,21 @@ const Special = styled.div`
   grid-template-columns: 2fr 1fr;
 `;
 
-const SpecialImageContainer = styled.div`
-  height: 61.8vh;
+const SpecialImageContainer = styled.a`
+  display: flex;
+
   position: relative;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 `;
 
 const Contact = styled.div``;
 
 const ContactImageContainer = styled.div`
+  background-image: url(field.png);
+  background-position: center;
+  background-size: cover;
   height: 350px;
   margin-bottom: 3px;
   position: relative;
@@ -161,7 +174,7 @@ export default function AboutPage() {
       id: 1,
       client: "Client Name",
       title: "Leagues Cup 2023",
-      image: ProjectOneImage,
+      image: "/PLANE.png",
       description: `<p>
         PRODUCED BY: Starting Eleven
         <br />
@@ -178,7 +191,7 @@ export default function AboutPage() {
       id: 2,
       client: "@mls x @appletv",
       title: "Breakaway - Ep. 5 (Mateusz Klich)",
-      image: ProjectImageBreakaway,
+      image: "/BREAKAWAY.jpg",
       description: `<p>
         PRODUCED BY: Starting Eleven
         <br />
@@ -195,7 +208,7 @@ export default function AboutPage() {
       id: 3,
       client: "Puma",
       title: "A New King (Xavi Simons)",
-      image: ProjectImageSimons,
+      image: "/NEW_KING.jpg",
       description: `<p>
           PRODUCED BY: Starting Eleven
           <br />
@@ -209,7 +222,7 @@ export default function AboutPage() {
   return (
     <main>
       <section>
-        <Placeholder $image="/making-the-plane.png">
+        <Placeholder $image="/PLANE.png">
           <PlayButton
             onClick={() =>
               setModalState((modalState) => ({ ...modalState, about: true }))
@@ -235,7 +248,10 @@ export default function AboutPage() {
             >
               &times;
             </ModalClose>
-            <ResponsivePlayer url="https://vimeo.com/854736625" />
+            <ResponsivePlayer
+              desktop="https://vimeo.com/854736625"
+              mobile="https://vimeo.com/854736625"
+            />
           </div>
         </StyledModal>
       </section>
@@ -266,37 +282,23 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <AboutImageContainer>
-              <Image
-                src={AboutImage}
-                alt="Why us? - Starting Eleven"
-                fill
-                sizes="800px"
-                style={{ objectFit: "cover" }}
-              />
-            </AboutImageContainer>
+            <AboutImageContainer></AboutImageContainer>
           </About>
         </section>
 
         <section id="projects">
           <SectionTitle>Featured Project</SectionTitle>
           <Special>
-            <SpecialImageContainer>
-              <Image
-                src={FeaturedProjectImage}
-                alt="Featured Project - Starting Eleven"
-                fill
-                sizes="1200px"
-                style={{ objectFit: "cover" }}
-              />
-            </SpecialImageContainer>
+            <SpecialImageContainer
+              href="/project/eafc/"
+              style={{ backgroundImage: "url(/project/eafc/eafc-hero.jpg)" }}
+            ></SpecialImageContainer>
 
             <Project>
               <FeaturedProjectTitle>
                 EAFC FUT Hero
                 <br />
-                <br />
-                Demarcus Beasley
+                <span>Demarcus Beasley</span>
               </FeaturedProjectTitle>
               <p>
                 Produced by: Starting Eleven
@@ -324,24 +326,19 @@ export default function AboutPage() {
           <Projects>
             {PROJECTS.map(({ client, description, image, title }) => (
               <Project key={title}>
-                <ProjectImageContainer href="#0">
-                  <Image
-                    alt={title}
-                    fill
-                    sizes="400px"
-                    src={image}
-                    style={{ objectFit: "cover" }}
-                  />
-                </ProjectImageContainer>
+                <ProjectImageContainer
+                  href="/project/eafc/"
+                  style={{ backgroundImage: `url(${image})` }}
+                ></ProjectImageContainer>
 
                 <ProjectTitle>
                   {title}
                   <br />
-                  <br />
-                  {client}
+                  <span>{client}</span>
                 </ProjectTitle>
 
                 <p dangerouslySetInnerHTML={{ __html: description }}></p>
+                <a href="/project/eafc/">More &rarr;</a>
               </Project>
             ))}
           </Projects>
@@ -356,15 +353,7 @@ export default function AboutPage() {
           </div>
 
           <Contact>
-            <ContactImageContainer>
-              <Image
-                src={FieldImage}
-                alt="We are special - Starting Eleven"
-                fill
-                sizes="1400px"
-                style={{ objectFit: "cover" }}
-              />
-            </ContactImageContainer>
+            <ContactImageContainer></ContactImageContainer>
           </Contact>
         </section>
       </Wrap>
