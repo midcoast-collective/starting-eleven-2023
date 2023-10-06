@@ -300,7 +300,7 @@ export default function AboutPage() {
               </FeaturedProjectTitle>
               <p>
                 Produced by: Starting Eleven
-                <br /> Directors: Casey Wertz and Devin L'Amoreaux
+                <br /> Directors: Casey Wertz and Devin L&apos;Amoreaux
                 <br /> Art: daisyparoczyhickey
                 <br /> VFX: andytorres_a
                 <br /> Editor: mariababcock
