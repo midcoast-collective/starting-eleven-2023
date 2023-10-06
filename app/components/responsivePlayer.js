@@ -13,6 +13,7 @@ const PlayerWrapper = styled.div`
   padding-top: 56.25%;
   position: relative;
   transition: opacity 1000ms linear;
+  z-index: 0;
 
   @media (max-width: 800px) {
     padding-top: 177.75%;
@@ -59,6 +60,7 @@ const ResponsivePlayer = ({
           position: "absolute",
           top: 0,
           left: 0,
+          zIndex: 0,
         }}
         width="100%"
       />
