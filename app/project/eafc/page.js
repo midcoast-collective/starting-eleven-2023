@@ -1,22 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState } from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { Navigation, Scrollbar } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/thumbs";
 import "swiper/css/navigation";
-import "swiper/css/free-mode";
+import "swiper/css/scrollbar";
 
 import ResponsivePlayer from "../../components/responsivePlayer";
 import Wrap from "../../components/wrap";
 
 const Gallery = styled.section`
   --swiper-theme-color: var(--color-light);
-  --swiper-navigation-size: 2rem;
+  --swiper-navigation-size: 1.5rem;
+  --swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.3);
+  --swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.9);
 
   .swiper-slide img {
     display: block;
@@ -26,30 +26,26 @@ const Gallery = styled.section`
   }
 `;
 
-const GalleryNav = styled.div`
-  background-color: black;
+const ContentSection = styled.section`
+  padding: 3rem 0;
+`;
 
-  .swiper-slide {
-    cursor: pointer;
-    opacity: 0.4;
-  }
+const QuoteSection = styled.section`
+  padding: 3rem 0;
+  text-align: center;
 
-  .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  p {
+    font-size: 1.15rem;
+    max-width: 50rem;
+    line-height: 2rem;
+    margin: 0 auto 1.5rem;
   }
 `;
 
-const Project = styled.div`
+const ProjectSection = styled.div`
   padding: 3rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
 `;
 
@@ -78,14 +74,50 @@ const FeaturedProjectTitle = styled(ProjectTitle)`
 `;
 
 export default function ProjectPage() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
   return (
     <main>
       <ResponsivePlayer
         desktop="https://vimeo.com/859822940"
         mobile="https://vimeo.com/859822940"
       />
+
+      <ContentSection>
+        <Wrap>
+          <ProjectSection>
+            <FeaturedProjectTitle>
+              Title
+              <br />
+              <span>Subtitle</span>
+            </FeaturedProjectTitle>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </ProjectSection>
+
+          <ProjectSection>
+            <FeaturedProjectTitle>
+              Title
+              <br />
+              <span>Subtitle</span>
+            </FeaturedProjectTitle>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </ProjectSection>
+        </Wrap>
+      </ContentSection>
 
       <section>
         <Gallery>
@@ -94,13 +126,14 @@ export default function ProjectPage() {
             slidesPerView={1}
             onSwiper={(swiper) => console.log(swiper)}
             navigation
-            modules={[FreeMode, Navigation, Thumbs]}
-            thumbs={{ swiper: thumbsSwiper }}
+            modules={[Navigation, Scrollbar]}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
             style={{
               height: "70vh",
               backgroundColor: "black",
               borderBottom: "1px solid var(--color-dark)",
-              overflow: "hidden",
+              // overflow: "hidden",
             }}
           >
             <SwiperSlide>
@@ -131,70 +164,18 @@ export default function ProjectPage() {
         </Gallery>
       </section>
 
-      <section>
-        <GalleryNav>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={4}
-            modules={[FreeMode, Navigation, Thumbs]}
-            onSwiper={setThumbsSwiper}
-            freeMode
-            watchSlidesProgress
-            style={{ height: "20vh", width: "100vw" }}
-          >
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-hero.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-1.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-2.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-3.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-hero.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-1.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-2.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/eafc/eafc-3.jpg" alt="" />
-            </SwiperSlide>
-          </Swiper>
-        </GalleryNav>
-      </section>
-
-      <section>
-        <Wrap>
-          <Project>
-            <FeaturedProjectTitle>
-              EAFC FUT Hero
-              <br />
-              <span>Demarcus Beasley</span>
-            </FeaturedProjectTitle>
-            <p>
-              Produced by: Starting Eleven
-              <br /> Directors: Casey Wertz and Devin L&apos;Amoreaux
-              <br /> Art: daisyparoczyhickey
-              <br /> VFX: andytorres_a
-              <br /> Editor: mariababcock
-              <br /> Associate Producer and 1st AD: victoriasbritton
-              <br /> DP: chrisdurr__
-              <br /> AC: rbranit
-              <br /> Score and final mix: zane_callister
-              <br /> Colorist: taylrejonesgrade
-              <br /> Sound Design: @cstropko
-              <br /> BTS: Jason Cadena
-            </p>
-          </Project>
-        </Wrap>
-      </section>
+      <QuoteSection>
+        <p>
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.&quot;
+        </p>
+        <p>- Quote Author</p>
+      </QuoteSection>
     </main>
   );
 }
