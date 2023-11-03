@@ -58,13 +58,17 @@ export const ProjectSectionTitle = styled.h2`
 `;
 
 export const QuoteSection = styled.section`
-  padding: 4rem 0 3rem;
-  text-align: center;
+  padding: 1.5rem 0 3rem;
 
   p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     max-width: 50rem;
     line-height: 2rem;
     margin: 0 auto 1.5rem;
+    text-align: left;
+  }
+
+  p.author {
+    text-align: right;
   }
 `;

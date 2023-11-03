@@ -52,7 +52,7 @@ export default function ProjectPage() {
         </Wrap>
       </Project.ContentSection>
 
-      <Project.QuoteSection style={{ paddingTop: "1.5rem" }}>
+      <Project.QuoteSection>
         <p>
           This project is a big undertaking for us balancing a players personal
           time and achieving high quality through the camera and story.
@@ -78,17 +78,20 @@ export default function ProjectPage() {
             scrollbar={{ draggable: true }}
             style={{ height: "70vh" }}
           >
-            <SwiperSlide>
-              <img src="/project/apple-tv-breakaway/eafc-hero.jpg" alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/project/apple-tv-breakaway/eafc-hero.jpg" alt="" />
-            </SwiperSlide>
+            {[
+              "/project/apple-tv-breakaway/apple-tv-breakaway.png",
+              "/project/apple-tv-breakaway/apple-tv-breakaway2.png",
+              "/project/apple-tv-breakaway/apple-tv-breakaway3.png",
+            ].map((image) => (
+              <SwiperSlide key={image}>
+                <img src={image} alt="" />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Project.Gallery>
       </section>
 
-      <Project.QuoteSection>
+      <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
           &quot;Working with players 1 on 1 is my favorite part of documenting
           soccer. Without the players there genuinely is nothing. When we are
@@ -99,7 +102,7 @@ export default function ProjectPage() {
           have worked hard to make a name for themselves and its our job to do
           them justice in a world that they don&apos;t really understand.&quot;
         </p>
-        <p>
+        <p className="author">
           - Devin L&apos;Amoreaux
           <br />
           Director

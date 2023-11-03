@@ -291,32 +291,30 @@ export default function AboutPage() {
               href="/project/apple-tv-breakaway"
               style={{
                 backgroundImage:
-                  "url(/project/apple-tv-breakaway/eafc-hero.jpg)",
+                  "url(/project/apple-tv-breakaway/apple-tv-breakaway.png)",
               }}
             ></SpecialImageContainer>
 
             <Project>
               <FeaturedProjectTitle>
-                EAFC FUT Hero
+                Breakaway
                 <br />
-                <span>Demarcus Beasley</span>
+                <span>Apple TV</span>
               </FeaturedProjectTitle>
               <p>
+                We work with each player specifically on what they want to do
+                and how they want to tell their story. We bring them into our
+                pre/pro before we fly to them. We setup a few things for them to
+                do and record a voice-over with them to tell their story in a
+                intimate way.
+                <br />
+                <br />
                 Produced by: Starting Eleven
-                <br /> Directors: Casey Wertz and Devin L&apos;Amoreaux
-                <br /> Art: daisyparoczyhickey
-                <br /> VFX: andytorres_a
-                <br /> Editor: mariababcock
-                <br /> Associate Producer and 1st AD: victoriasbritton
-                <br /> DP: chrisdurr__
-                <br /> AC: rbranit
-                <br /> Score and final mix: zane_callister
-                <br /> Colorist: taylrejonesgrade
-                <br /> Sound Design: @cstropko
-                <br /> BTS: Jason Cadena
+                <br />
+                Director(s): Casey Wertz & Devin L&apos;Amoreaux
                 <br />
                 <br />
-                <a href="/project/eafc/">More &rarr;</a>
+                <a href="/project/apple-tv-breakaway">More &rarr;</a>
               </p>
             </Project>
           </Special>
@@ -327,7 +325,7 @@ export default function AboutPage() {
             {PROJECTS.map(({ client, description, image, title }) => (
               <Project key={title}>
                 <ProjectImageContainer
-                  href="/project/eafc/"
+                  href="/project/apple-tv-breakaway"
                   style={{ backgroundImage: `url(${image})` }}
                 ></ProjectImageContainer>
 
@@ -339,7 +337,7 @@ export default function AboutPage() {
 
                 <p dangerouslySetInnerHTML={{ __html: description }}></p>
                 <br />
-                <a href="/project/eafc/">More &rarr;</a>
+                <a href="/project/apple-tv-breakaway">More &rarr;</a>
               </Project>
             ))}
           </Projects>
