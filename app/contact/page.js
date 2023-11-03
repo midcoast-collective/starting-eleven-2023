@@ -27,20 +27,14 @@ const PlayButton = styled.div`
   text-shadow: 0 0 18px black;
 `;
 
-const GrayBackground = styled.div`
-  background-color: var(--color-gray);
-  border-bottom: 1px solid var(--color-dark);
-  padding: 3rem 0;
-  margin-bottom: 3rem;
-`;
-
 const SectionTitle = styled.h2`
   border-bottom: 1px solid var(--color-dark);
+  border-top: 1px solid var(--color-dark);
   color: var(--color-dark);
-  font-size: var(--font-size-heading-large);
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1;
-  margin: 0 0 3rem;
+  margin: 3rem 0;
   padding: 1.5rem 0;
   text-transform: uppercase;
 `;
@@ -48,8 +42,7 @@ const SectionTitle = styled.h2`
 const Projects = styled.div`
   column-gap: 3rem;
   display: grid;
-  grid-template-columns: var(--grid-columns-three);
-  padding: 3rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 3rem;
 `;
 
@@ -67,7 +60,7 @@ const Project = styled.div`
 
 const ProjectImageContainer = styled.a`
   display: block;
-  height: 15rem;
+  height: 12rem;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -75,21 +68,24 @@ const ProjectImageContainer = styled.a`
 
 const ProjectTitle = styled.h3`
   border-bottom: 1px solid var(--color-dark);
+  border-top: 1px solid var(--color-dark);
   color: var(--color-dark);
-  font-size: var(--font-size-heading-small);
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1;
-  margin: 0.75rem 0;
+  margin: 1.5rem 0 0.75rem;
   padding: 0.75rem 0;
   text-transform: uppercase;
 
   span {
-    font-size: var(--font-size-heading-subtitle);
+    font-size: 0.8rem;
     font-weight: 400;
   }
 `;
 
 const FeaturedProjectTitle = styled(ProjectTitle)`
+  border-bottom: 0;
+  border-top: 0;
   margin: 0 0 0.75rem;
   padding: 0 0 0.75rem;
 `;
@@ -97,14 +93,13 @@ const FeaturedProjectTitle = styled(ProjectTitle)`
 const About = styled.div`
   column-gap: 3rem;
   display: grid;
-  grid-template-columns: var(--grid-columns-three);
+  grid-template-columns: 1fr 2fr;
 `;
 
 const AboutImageContainer = styled.div`
   display: flex;
   background-image: url(/about.png);
-  grid-column: 2 / 4;
-  min-height: 33rem;
+  height: 61.8vh;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -147,17 +142,28 @@ const StyledBackdrop = styled.div`
 const Special = styled.div`
   column-gap: 3rem;
   display: grid;
-  grid-template-columns: var(--grid-columns-three);
+  grid-template-columns: 2fr 1fr;
 `;
 
 const SpecialImageContainer = styled.a`
   display: flex;
-  grid-column: 1 / 3;
-  min-height: 33rem;
+
   position: relative;
   width: 100%;
   background-size: cover;
   background-position: center;
+`;
+
+const Contact = styled.div``;
+
+const ContactImageContainer = styled.div`
+  background-image: url(field.png);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  margin-bottom: 3px;
+  position: relative;
+  width: 100%;
 `;
 
 export default function AboutPage() {
@@ -250,49 +256,42 @@ export default function AboutPage() {
         </StyledModal>
       </section>
 
-      <GrayBackground>
-        <Wrap>
-          <section id="about">
-            <SectionTitle>Why Us?</SectionTitle>
-            <About>
-              <div>
-                <p>
-                  <strong>Setting the standard for soccer storytelling.</strong>
-                </p>
-                <p>It&apos;s not a game. It&apos;s art.</p>
-                <p>
-                  Starting Eleven is the leading soccer-specific production
-                  agency in the country. From conception to post-production, we
-                  deliver authentic stories rooted in respect for the sport —
-                  and everyone who loves it. We elevate narratives for athletes,
-                  clubs, leagues, and brands by connecting artist to artist.
-                </p>
-                <p>
-                  <strong>
-                    STARTING ELEVEN HAS COVERED EVERYTHING FROM THE WORLD CUP TO
-                    SHOOTING THE COVER OF EAFC (PREVIOUSLY FIFA) TO EVERY
-                    SIGNIFICANT soccer game within the United States. WE ARE A
-                    BILINGUAL, MULTICULTURAL TEAM OF SOCCER ENTHUSIASTS.
-                  </strong>
-                </p>
-              </div>
-
-              <AboutImageContainer></AboutImageContainer>
-            </About>
-          </section>
-        </Wrap>
-      </GrayBackground>
-
       <Wrap>
+        <section id="about">
+          <SectionTitle>Why Us?</SectionTitle>
+          <About>
+            <div>
+              <p>
+                <strong>Setting the standard for soccer storytelling.</strong>
+              </p>
+              <p>It&apos;s not a game. It&apos;s art.</p>
+              <p>
+                Starting Eleven is the leading soccer-specific production agency
+                in the country. From conception to post-production, we deliver
+                authentic stories rooted in respect for the sport — and everyone
+                who loves it. We elevate narratives for athletes, clubs,
+                leagues, and brands by connecting artist to artist.
+              </p>
+              <p>
+                <strong>
+                  STARTING ELEVEN HAS COVERED EVERYTHING FROM THE WORLD CUP TO
+                  SHOOTING THE COVER OF EAFC (PREVIOUSLY FIFA) TO EVERY
+                  SIGNIFICANT soccer game within the United States. WE ARE A
+                  BILINGUAL, MULTICULTURAL TEAM OF SOCCER ENTHUSIASTS.
+                </strong>
+              </p>
+            </div>
+
+            <AboutImageContainer></AboutImageContainer>
+          </About>
+        </section>
+
         <section id="projects">
-          <SectionTitle>Projects</SectionTitle>
+          <SectionTitle>Featured Project</SectionTitle>
           <Special>
             <SpecialImageContainer
-              href="/project/apple-tv-breakaway"
-              style={{
-                backgroundImage:
-                  "url(/project/apple-tv-breakaway/eafc-hero.jpg)",
-              }}
+              href="/project/eafc/"
+              style={{ backgroundImage: "url(/project/eafc/eafc-hero.jpg)" }}
             ></SpecialImageContainer>
 
             <Project>
@@ -323,6 +322,7 @@ export default function AboutPage() {
         </section>
 
         <section>
+          <SectionTitle>Projects</SectionTitle>
           <Projects>
             {PROJECTS.map(({ client, description, image, title }) => (
               <Project key={title}>
@@ -343,6 +343,19 @@ export default function AboutPage() {
               </Project>
             ))}
           </Projects>
+        </section>
+
+        <section id="contact">
+          <SectionTitle>Contact us</SectionTitle>
+          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+            <p>
+              <strong>email@startingeleven.com</strong>
+            </p>
+          </div>
+
+          <Contact>
+            <ContactImageContainer></ContactImageContainer>
+          </Contact>
         </section>
       </Wrap>
     </main>
