@@ -46,8 +46,76 @@ export default function ProjectPage() {
 
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>Credits</Project.ProjectSectionTitle>
-            <p>Produced by: Starting Eleven</p>
-            <p>Director(s): Casey Wertz & Devin L&apos;Amoreaux</p>
+            <p>
+              Produced by: Starting Eleven
+              <br />
+              Director(s): Casey Wertz & Devin L&apos;Amoreaux
+            </p>
+          </Project.ProjectSection>
+
+          <Project.ProjectSection>
+            <Project.ProjectSectionTitle>Episodes</Project.ProjectSectionTitle>
+            <Project.Episodes>
+              <Swiper
+                spaceBetween={24}
+                slidesPerView={2.25}
+                navigation
+                modules={[Navigation]}
+              >
+                {[
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode1.png",
+                    link: "https://tv.apple.com/us/episode/paul-arriola/umc.cmc.3l8fphf61qe2dw5r74tnbwo85?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Paul Arriola",
+                    subtitle: "Episode 1",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode2.png",
+                    link: "https://tv.apple.com/us/episode/cade-cowell/umc.cmc.367cndfhcyqhuslehovrt58y3?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Cade Cowell",
+                    subtitle: "Episode 2",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode3.png",
+                    link: "https://tv.apple.com/us/episode/alan-pulido/umc.cmc.71zwtcfbjhisyx92yzw0slq6?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Alan Pulido",
+                    subtitle: "Episode 3",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode4.png",
+                    link: "https://tv.apple.com/us/episode/josef-martinez/umc.cmc.5po8uqi96xpsridzqenzyjp34?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Josef Martinez",
+                    subtitle: "Episode 4",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode5.png",
+                    link: "https://tv.apple.com/us/episode/mateusz-klich/umc.cmc.26p1ubihp6w7cmm2it64mx2wm?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Mateusz Klich",
+                    subtitle: "Episode 5",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode6.png",
+                    link: "https://tv.apple.com/us/episode/chicho-arango/umc.cmc.7fktx04a6aaqf4xqn6hq7o49h?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "Chicho Arango",
+                    subtitle: "Episode 6",
+                  },
+                  {
+                    image: "/project/apple-tv-breakaway/episodes/episode7.png",
+                    link: "https://tv.apple.com/us/episode/john-tolkin/umc.cmc.1gb88vore8r8mx7mapj9v01sy?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
+                    title: "John Tolkin",
+                    subtitle: "Episode 7",
+                  },
+                ].map((episode) => (
+                  <SwiperSlide key={episode.image}>
+                    <Project.Episode href={episode.link} target="_blank">
+                      <img src={episode.image} alt="" />
+                      <h3>{episode.subtitle}</h3>
+                      <h4>{episode.title}</h4>
+                    </Project.Episode>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Project.Episodes>
           </Project.ProjectSection>
         </Wrap>
       </Project.ContentSection>
@@ -71,7 +139,7 @@ export default function ProjectPage() {
           <Swiper
             spaceBetween={48}
             slidesPerView={1.1}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSwiper={(swiper) => console.log(swiper)}
             navigation
             modules={[Navigation, Scrollbar]}
             pagination={{ clickable: true }}
@@ -79,9 +147,9 @@ export default function ProjectPage() {
             style={{ height: "70vh" }}
           >
             {[
-              "/project/apple-tv-breakaway/apple-tv-breakaway.png",
-              "/project/apple-tv-breakaway/apple-tv-breakaway2.png",
-              "/project/apple-tv-breakaway/apple-tv-breakaway3.png",
+              "/project/apple-tv-breakaway/images/apple-tv-breakaway.png",
+              "/project/apple-tv-breakaway/images/apple-tv-breakaway2.png",
+              "/project/apple-tv-breakaway/images/apple-tv-breakaway3.png",
             ].map((image) => (
               <SwiperSlide key={image}>
                 <img src={image} alt="" />

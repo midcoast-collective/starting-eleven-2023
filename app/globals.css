@@ -1,14 +1,17 @@
+@import url("https://use.typekit.net/euk0jxu.css");
+
 :root {
   --color-dark: #0a0a0a;
   --color-light: #ffffff;
   --color-gray: #f9f9f9;
 
-  --font-courier: "Courier New";
-
   --font-size-strong: 1.125rem;
   --font-size-heading-small: 1.25rem;
   --font-size-heading-large: 1.5rem;
   --font-size-heading-subtitle: 0.75rem;
+
+  --font-family-grotesk: "aktiv-grotesk", sans-serif;
+  --font-family-proxima: "proxima-nova", sans-serif;
 
   --max-width: 1400px;
   --grid-columns-three: repeat(3, 1fr);
@@ -44,7 +47,7 @@ body {
 body {
   color: var(--color-dark);
   background: var(--color-light);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-family-proxima);
   font-size: 1rem;
 }
 
@@ -71,6 +74,13 @@ svg {
 
 strong {
   font-size: var(--font-size-strong);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-grotesk);
 }
 
 /* @media (prefers-color-scheme: dark) {

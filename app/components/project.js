@@ -2,6 +2,42 @@
 
 import styled from "styled-components";
 
+export const Episodes = styled.section`
+  --swiper-theme-color: var(--color-light);
+  --swiper-navigation-size: 1.5rem;
+
+  color: var(--color-dark);
+
+  grid-column: 2 / 4;
+`;
+
+export const Episode = styled.a`
+  background-color: var(--color-gray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: var(--font-size-heading-subtitle);
+    font-weight: 400;
+    padding: 0.75rem 0.75rem 0;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 1rem;
+    padding: 0 0.75rem 0.75rem;
+  }
+`;
+
 export const Gallery = styled.section`
   --swiper-theme-color: var(--color-light);
   --swiper-navigation-size: 1.5rem;
@@ -50,6 +86,7 @@ export const ProjectSectionTitle = styled.h2`
   color: var(--color-dark);
   font-size: var(--font-size-heading-subtitle);
   font-weight: 600;
+  grid-column: 1 / 2;
   line-height: 1.5rem;
   margin: 0 0 0.75rem;
   padding: 0 0 0.75rem;
