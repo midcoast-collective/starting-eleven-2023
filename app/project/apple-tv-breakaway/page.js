@@ -128,10 +128,6 @@ export default function ProjectPage() {
           best as what we do. We know how to be in the players shoes and bring
           the best out of them.
         </p>
-        <p>
-          Not to often we get asked by players and agents if we can work with
-          them specifically. (this can be worded better for sure)
-        </p>
       </Project.QuoteSection>
 
       <section>

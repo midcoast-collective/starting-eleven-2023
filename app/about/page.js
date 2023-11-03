@@ -216,7 +216,7 @@ export default function AboutPage() {
   return (
     <main>
       <section>
-        <Placeholder $image="/PLANE.png">
+        <Placeholder $image="/aboutpage.png">
           <PlayButton
             onClick={() =>
               setModalState((modalState) => ({ ...modalState, about: true }))
@@ -291,7 +291,7 @@ export default function AboutPage() {
               href="/project/apple-tv-breakaway"
               style={{
                 backgroundImage:
-                  "url(/project/apple-tv-breakaway/apple-tv-breakaway.png)",
+                  "url(/project/apple-tv-breakaway/images/apple-tv-breakaway.png)",
               }}
             ></SpecialImageContainer>
 
@@ -302,11 +302,11 @@ export default function AboutPage() {
                 <span>Apple TV</span>
               </FeaturedProjectTitle>
               <p>
-                We work with each player specifically on what they want to do
-                and how they want to tell their story. We bring them into our
-                pre/pro before we fly to them. We setup a few things for them to
-                do and record a voice-over with them to tell their story in a
-                intimate way.
+                This project is a big undertaking for us balancing a players
+                personal time and achieving high quality through the camera and
+                story. Sometimes the equation doesn&apos;t favor us but
+                that&apos;s what makes us the best at what we do. We know how to
+                be in the players shoes and bring the best out of them.
                 <br />
                 <br />
                 Produced by: Starting Eleven
