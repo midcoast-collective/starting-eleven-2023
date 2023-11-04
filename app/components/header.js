@@ -4,11 +4,11 @@
 import { usePathname } from "next/navigation";
 import styled from "styled-components";
 
-import Nav from "./nav";
-import InstagramBanner from "./instagramBanner";
+import Nav from "@/app/components/nav";
+import InstagramBanner from "@/app/components/instagramBanner";
 
 const Header = styled.header`
-  border-bottom: 1px solid var(--color-dark);
+  border-bottom: 1px solid var(--color-black);
 `;
 
 const HeaderWrap = styled.div`
@@ -35,13 +35,14 @@ const LogoWrap = styled.a`
 
 export default function HeaderComponent() {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   return (
     <Header>
-      {pathname !== "/" ? <InstagramBanner /> : null}
+      {!isHomePage ? <InstagramBanner /> : null}
 
       <HeaderWrap>
-        <h1 className="sr-only">Starting Eleven</h1>
+        {isHomePage ? <h1 className="sr-only">Starting Eleven</h1> : null}
 
         <LogoWrap href="/">
           <img alt="Starting Eleven" src="/logo.png" />

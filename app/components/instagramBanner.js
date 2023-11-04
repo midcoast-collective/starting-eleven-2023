@@ -1,16 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import styled from "styled-components";
 
 const Banner = styled.div`
-  background-color: var(--color-dark);
+  background-color: var(--color-black);
   padding: 1rem 0 1rem;
 `;
 
 const BannerWrap = styled.a`
   align-items: center;
-  color: var(--color-light);
+  color: var(--color-white);
   display: flex;
   font-size: 1rem;
   justify-content: center;
@@ -19,16 +18,16 @@ const BannerWrap = styled.a`
   width: 100%;
 
   svg {
-    fill: var(--color-light);
+    fill: var(--color-white);
     margin-left: 0.5rem;
     margin-bottom: 0.05rem;
   }
 `;
 
-export default function HeaderComponent() {
+export default function InstagramBanner() {
   return (
     <Banner>
-      <BannerWrap href="//www.instagram.com/startingeleven.us/">
+      <BannerWrap href="//www.instagram.com/startingeleven.us/" target="_blank">
         Follow our story
         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title>Instagram</title>

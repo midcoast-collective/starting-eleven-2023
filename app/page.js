@@ -1,24 +1,20 @@
-"use client";
+import ResponsivePlayer from "@/app/components/responsivePlayer";
+import * as Page from "@/app/components/page";
 
-import styled from "styled-components";
-
-import ResponsivePlayer from "./components/responsivePlayer";
-
-const IntroWrap = styled.div`
-  background-color: black;
-  border-bottom: 1px solid var(--color-dark);
-  overflow: hidden;
-`;
+export const metadata = {
+  title: "Starting Eleven",
+  description: "Setting the standard for soccer storytelling.",
+};
 
 export default function HomePage() {
   return (
     <main>
-      <IntroWrap>
+      <Page.IntroWrap>
         <ResponsivePlayer
           desktop="https://vimeo.com/854736625"
           mobile="https://vimeo.com/857607311"
         />
-      </IntroWrap>
+      </Page.IntroWrap>
     </main>
   );
 }

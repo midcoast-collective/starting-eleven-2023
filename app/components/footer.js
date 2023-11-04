@@ -2,9 +2,9 @@
 
 import styled from "styled-components";
 
-import Nav from "./nav";
-import Wrap from "./wrap";
-import InstagramBanner from "./instagramBanner";
+import Nav from "@/app/components/nav";
+import Wrap from "@/app/components/wrap";
+import InstagramBanner from "@/app/components/instagramBanner";
 
 const Footer = styled.div`
   background-color: white;

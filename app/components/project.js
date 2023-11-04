@@ -2,61 +2,6 @@
 
 import styled from "styled-components";
 
-export const Episodes = styled.section`
-  --swiper-theme-color: var(--color-light);
-  --swiper-navigation-size: 1.5rem;
-
-  color: var(--color-dark);
-
-  grid-column: 2 / 4;
-`;
-
-export const Episode = styled.a`
-  background-color: var(--color-gray);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-
-  img {
-    border-radius: 8px 8px 0 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  h3 {
-    font-size: var(--font-size-heading-subtitle);
-    font-weight: 400;
-    padding: 0.75rem 0.75rem 0;
-    text-transform: uppercase;
-  }
-
-  h4 {
-    font-size: 1rem;
-    padding: 0 0.75rem 0.75rem;
-  }
-`;
-
-export const Gallery = styled.section`
-  --swiper-theme-color: var(--color-light);
-  --swiper-navigation-size: 1.5rem;
-  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.2);
-  --swiper-scrollbar-drag-bg-color: var(--color-dark);
-  --swiper-scrollbar-bottom: -1rem;
-
-  .swiper {
-    overflow: visible;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
-
 export const ContentSection = styled.section`
   padding: 3rem 0;
 `;
@@ -83,19 +28,19 @@ export const ProjectSection = styled.div`
 export const ProjectSectionTitle = styled.h2`
   border-bottom: 0;
   border-top: 0;
-  color: var(--color-dark);
+  color: var(--color-black);
   font-size: var(--font-size-heading-subtitle);
   font-weight: 600;
   grid-column: 1 / 2;
   line-height: 1.5rem;
   margin: 0 0 0.75rem;
   padding: 0 0 0.75rem;
-  text-align: right;
+  text-align: ${({ $align }) => $align ?? "right"};
   text-transform: uppercase;
 `;
 
 export const QuoteSection = styled.section`
-  padding: 1.5rem 0 3rem;
+  padding: 1.5rem 1.5rem 3rem;
 
   p {
     font-size: 1rem;

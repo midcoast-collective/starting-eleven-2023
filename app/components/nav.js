@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import styled from "styled-components";
@@ -10,10 +9,10 @@ const Nav = styled.nav`
 `;
 
 const StyledLink = styled.a`
-  color: var(--color-dark);
+  color: var(--color-black);
   margin: 0 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  font-size: var(--font-size-strong);
 
   &.icon {
     margin: 0 0.5rem;

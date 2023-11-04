@@ -1,13 +1,8 @@
 import "./globals.css";
 
-import StyledComponentsRegistry from "app/components/registry";
-import Header from "app/components/header";
-import Footer from "app/components/footer";
-
-export const metadata = {
-  title: "Starting Eleven",
-  description: "Starting Eleven",
-};
+import StyledComponentsRegistry from "@/app/components/registry";
+import Header from "@/app/components/header";
+import Footer from "@/app/components/footer";
 
 export default function RootLayout({ children }) {
   return (
