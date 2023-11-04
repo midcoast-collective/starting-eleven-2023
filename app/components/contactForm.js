@@ -6,15 +6,42 @@ import { Button } from "@restart/ui";
 
 const Fieldset = styled.fieldset`
   border: 0;
-  display: grid;
-  grid-template-columns: var(--grid-columns-three);
+  margin: auto;
+  padding: 0 0 1.5rem;
 
   label {
+    align-self: center;
+    font-family: var(--font-family-grotesk);
+    font-size: var(--font-size-heading-subtitle);
+    font-weight: 600;
     grid-column: 1 / 2;
+    text-align: right;
+    text-transform: uppercase;
   }
 
-  input {
-    grid-column: 2 / 4;
+  input,
+  textarea {
+    font-family: var(--font-family-proxima);
+    padding: 0.75rem;
+    width: 100%;
+  }
+`;
+
+const Submit = styled(Button)`
+  background-color: var(--color-black);
+  border: 0;
+  border-radius: 8px;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  transition: all 300ms;
+
+  &:hover {
+    color: var(--color-green);
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 `;
 
@@ -59,7 +86,7 @@ export default function ContactForm() {
         <textarea name="message" id="message"></textarea>
       </Fieldset>
       <Fieldset>
-        <Button type="submit">Send</Button>
+        <Submit type="submit">Submit</Submit>
       </Fieldset>
     </form>
   );
