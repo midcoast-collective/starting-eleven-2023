@@ -67,7 +67,7 @@ export default function AboutPage() {
       <Page.GrayBackground>
         <Wrap>
           <section id="about">
-            <Page.SectionTitle>Why Us?</Page.SectionTitle>
+            <Page.SectionTitle as="h1">Why Us?</Page.SectionTitle>
             <Page.About>
               <div>
                 <h3>Setting the standard for soccer storytelling.</h3>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <Page.AboutImageContainer></Page.AboutImageContainer>
+              <Page.AboutImageContainer />
             </Page.About>
           </section>
         </Wrap>
