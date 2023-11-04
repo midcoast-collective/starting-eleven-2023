@@ -38,11 +38,14 @@ export const SectionTitle = styled.h2`
 `;
 
 export const Projects = styled.div`
-  column-gap: 3rem;
-  display: grid;
-  grid-template-columns: var(--grid-columns-three);
   padding: 3rem 0;
-  row-gap: 3rem;
+
+  @media (min-width: 800px) {
+    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: var(--grid-columns-three);
+    row-gap: 3rem;
+  }
 `;
 
 export const Project = styled.div`
@@ -87,9 +90,11 @@ export const FeaturedProjectTitle = styled(ProjectTitle)`
 `;
 
 export const About = styled.div`
-  column-gap: 3rem;
-  display: grid;
-  grid-template-columns: var(--grid-columns-three);
+  @media (min-width: 800px) {
+    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: var(--grid-columns-three);
+  }
 `;
 
 export const AboutImageContainer = styled.div`
@@ -104,9 +109,11 @@ export const AboutImageContainer = styled.div`
 `;
 
 export const Special = styled.div`
-  column-gap: 3rem;
-  display: grid;
-  grid-template-columns: var(--grid-columns-three);
+  @media (min-width: 800px) {
+    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: var(--grid-columns-three);
+  }
 `;
 
 export const SpecialImageContainer = styled.a`

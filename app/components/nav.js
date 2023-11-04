@@ -6,6 +6,11 @@ const Nav = styled.nav`
   align-items: center;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 800px) {
+    justify-content: space-around;
+    padding: 0.75rem 0;
+  }
 `;
 
 const StyledLink = styled.a`
@@ -19,7 +24,9 @@ const StyledLink = styled.a`
   }
 
   &.last {
-    margin-right: 0;
+    @media (min-width: 800px) {
+      margin-right: 0;
+    }
   }
 `;
 

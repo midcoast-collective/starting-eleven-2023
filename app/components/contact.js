@@ -19,4 +19,13 @@ export const Locations = styled.div`
   a:hover {
     padding-left: 0.25rem;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    div + div {
+      margin-left: 0;
+      margin-top: 1.5rem;
+    }
+  }
 `;

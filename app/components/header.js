@@ -30,7 +30,13 @@ const LogoWrap = styled.a`
   display: flex;
   height: 46px;
   position: relative;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export default function HeaderComponent() {

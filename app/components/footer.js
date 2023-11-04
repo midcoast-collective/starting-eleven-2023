@@ -12,6 +12,11 @@ const Footer = styled.div`
   padding: 1.5rem 0;
   justify-content: space-between;
 
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
   a {
     margin-left: 1.5rem;
   }
