@@ -55,14 +55,7 @@ export default function ProjectPage() {
     []
   );
 
-  const slides = useMemo(
-    () => [
-      "/project/apple-tv-breakaway/images/apple-tv-breakaway.png",
-      "/project/apple-tv-breakaway/images/apple-tv-breakaway2.png",
-      "/project/apple-tv-breakaway/images/apple-tv-breakaway3.png",
-    ],
-    []
-  );
+  const slides = useMemo(() => [], []);
 
   return (
     <main>
@@ -104,7 +97,7 @@ export default function ProjectPage() {
             </p>
           </Project.ProjectSection>
 
-          <Episodes data={episodes} />
+          {episodes.length > 0 ? <Episodes data={episodes} /> : null}
         </Wrap>
       </Project.ContentSection>
 
@@ -118,9 +111,11 @@ export default function ProjectPage() {
         </p>
       </Project.QuoteSection>
 
-      <section>
-        <Gallery data={slides} />
-      </section>
+      {slides.length > 0 ? (
+        <section>
+          <Gallery data={slides} />
+        </section>
+      ) : null}
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
