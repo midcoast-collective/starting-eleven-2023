@@ -60,7 +60,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/fifa-world-cup-qatar",
         title: "FIFA World Cup Qatar 2022™",
-        image: "/project/fifa-world-cup-qatar/gallery/1.jpg",
+        image: "/project/fifa-world-cup-qatar/gallery/8.jpg",
         description:
           "This was Devin's first time photographing at a World Cup. He used his relationships, connections and observational skills to soak in all the information he could upon his arrival. Looking for opportunities where he could excel at the tournament and have his photos stand out from the hundreds of other photographers there.",
       },

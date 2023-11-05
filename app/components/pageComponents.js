@@ -68,6 +68,7 @@ export const ProjectImageContainer = styled.a`
   display: block;
   height: 12rem;
   position: relative;
+  background-color: var(--color-gray);
   background-size: cover;
   background-position: center;
 
@@ -134,6 +135,7 @@ export const SpecialImageContainer = styled.a`
   min-height: 33rem;
   position: relative;
   width: 100%;
+  background-color: var(--color-gray);
   background-size: cover;
   background-position: center;
 
