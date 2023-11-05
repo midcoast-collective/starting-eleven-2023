@@ -33,14 +33,21 @@ export default function EpisodesComponent({ data }) {
   return (
     <Gallery>
       <Swiper
-        spaceBetween={48}
+        spaceBetween={24}
         slidesPerView={1.1}
-        // onSwiper={(swiper) => console.log(swiper)}
         navigation
         modules={[Navigation, Scrollbar]}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        style={{ height: "70vh" }}
+        height="12rem"
+        breakpoints={{
+          // max-width
+          800: {
+            slidesPerView: 1.1,
+            spaceBetween: 48,
+            height: "33rem",
+          },
+        }}
       >
         {data.map((image) => (
           <SwiperSlide key={image}>

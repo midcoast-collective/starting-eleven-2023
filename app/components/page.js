@@ -14,9 +14,13 @@ export const Placeholder = styled.div`
   background-position: center;
   background-size: cover;
   display: flex;
-  height: 700px;
+  height: 42rem;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 800px) {
+    height: 30rem;
+  }
 `;
 
 export const GrayBackground = styled.div`
@@ -62,10 +66,14 @@ export const Project = styled.div`
 
 export const ProjectImageContainer = styled.a`
   display: block;
-  height: 15rem;
+  height: 12rem;
   position: relative;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 800px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -106,6 +114,10 @@ export const AboutImageContainer = styled.div`
   width: 100%;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 800px) {
+    min-height: 12rem;
+  }
 `;
 
 export const Special = styled.div`
@@ -124,4 +136,9 @@ export const SpecialImageContainer = styled.a`
   width: 100%;
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 800px) {
+    min-height: 12rem;
+    margin-bottom: 1.5rem;
+  }
 `;

@@ -90,9 +90,17 @@ export default function EpisodesComponent({ data }) {
           setIsEnd(swiperRef.isEnd);
         }}
         onSwiper={setSwiperRef}
-        spaceBetween={24}
-        slidesPerView={4}
-        slidesPerGroup={2}
+        slidesPerView={1}
+        spaceBetween={16}
+        slidesPerGroup={1}
+        breakpoints={{
+          // max-width
+          800: {
+            spaceBetween: 24,
+            slidesPerView: 4,
+            slidesPerGroup: 2,
+          },
+        }}
       >
         {data.map((episode) => (
           <SwiperSlide key={episode.image}>
