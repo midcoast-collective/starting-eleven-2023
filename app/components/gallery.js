@@ -29,7 +29,7 @@ export const Gallery = styled.section`
   }
 `;
 
-export default function EpisodesComponent({ data }) {
+export default function GalleryComponent({ data }) {
   return (
     <Gallery>
       <Swiper

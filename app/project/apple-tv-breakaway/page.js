@@ -6,6 +6,12 @@ import Gallery from "@/app/components/gallery";
 import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
+export const metadata = {
+  title: "Breakaway - Apple TV",
+  description:
+    "This project is a big undertaking for us balancing a players personal time and achieving high quality through the camera and story. Sometimes the equation doesn't favor us but that's what makes us the best at what we do. We know how to be in the players shoes and bring the best out of them.",
+};
+
 export default function ProjectPage() {
   const episodes = useMemo(
     () => [
@@ -83,7 +89,7 @@ export default function ProjectPage() {
               We work with each player specifically on what they want to do and
               how they want to tell their story. We bring them into our pre/pro
               before we fly to them. We setup a few things for them to do and
-              record a voice-over with them to tell their story in a intimate
+              record a voice-over with them to tell their story in an intimate
               way.
             </p>
           </Project.ProjectSection>

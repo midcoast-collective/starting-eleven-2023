@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 import Wrap from "@/app/components/wrap";
 import * as Page from "@/app/components/page";
 import ImageWithVideoModal from "@/app/components/imageWithVideoModal";
@@ -8,55 +10,32 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  const PROJECTS = [
-    {
-      id: 1,
-      client: "Client Name",
-      title: "Leagues Cup 2023",
-      image: "/PLANE.png",
-      description: `<p>
-        PRODUCED BY: Starting Eleven
-        <br />
-        DIRECTED BY: Casey Wertz & Devin L&apos;Amoreaux
-        <br />
-        CAMERA OPERATORS: Luis Villarreal & Alec Gnass
-        <br />
-        EDITOR: Alec Gnass
-        <br />
-        Photography: Devin L&apos;Amoreaux
-      </p>`,
-    },
-    {
-      id: 2,
-      client: "@mls x @appletv",
-      title: "Breakaway - Ep. 5 (Mateusz Klich)",
-      image: "/BREAKAWAY.jpg",
-      description: `<p>
-        PRODUCED BY: Starting Eleven
-        <br />
-        DIRECTED BY: Casey Wertz & Devin L&apos;Amoreaux
-        <br />
-        CAMERA OPERATORS: Luis Villarreal & Alec Gnass
-        <br />
-        EDITOR: Alec Gnass
-        <br />
-        Photography: Devin L&apos;Amoreaux
-      </p>`,
-    },
-    {
-      id: 3,
-      client: "Puma",
-      title: "A New King (Xavi Simons)",
-      image: "/NEW_KING.jpg",
-      description: `<p>
-          PRODUCED BY: Starting Eleven
-          <br />
-          CREATIVE: Starting Eleven
-          <br />
-          DP/EDITOR: Jason Cadena
-        </p>`,
-    },
-  ];
+  const projects = useMemo(
+    () => [
+      {
+        id: 1,
+        client: "MLS x AppleTV",
+        featured: true,
+        title: "Breakaway",
+        image: "",
+        link: "/project/apple-tv-breakaway",
+        description:
+          "This project is a big undertaking for us balancing a players personal time and achieving high quality through the camera and story. Sometimes the equation doesn't favor us but that's what makes us the best at what we do. We know how to be in the players shoes and bring the best out of them.",
+      },
+      {
+        id: 2,
+        client: "MLS x AppleTV",
+        featured: false,
+        link: "/project/apple-tv-drone-tour",
+        title: "Drone Tour",
+        image:
+          "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021571-Enhanced-NR.jpg",
+        description:
+          "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
+      },
+    ],
+    []
+  );
 
   return (
     <main>
@@ -101,55 +80,59 @@ export default function AboutPage() {
       <Wrap>
         <section id="projects">
           <Page.SectionTitle>Projects</Page.SectionTitle>
-          <Page.Special>
-            <Page.SpecialImageContainer
-              href="/project/apple-tv-breakaway"
-              style={{
-                backgroundImage:
-                  "url(/project/apple-tv-breakaway/images/apple-tv-breakaway.png)",
-              }}
-            ></Page.SpecialImageContainer>
 
-            <Page.Project>
-              <Page.FeaturedProjectTitle>
-                Breakaway
-                <br />
-                <span>Apple TV</span>
-              </Page.FeaturedProjectTitle>
-              <p>
-                This project is a big undertaking for us balancing a players
-                personal time and achieving high quality through the camera and
-                story. Sometimes the equation doesn&apos;t favor us but
-                that&apos;s what makes us the best at what we do. We know how to
-                be in the players shoes and bring the best out of them.
-                <br />
-                <br />
-                <a href="/project/apple-tv-breakaway">More &rarr;</a>
-              </p>
-            </Page.Project>
-          </Page.Special>
+          {projects
+            .filter((project) => project.featured)
+            .map(({ client, description, link, image, title }) => (
+              <Page.Special key={title}>
+                <Page.SpecialImageContainer
+                  href={link}
+                  style={{
+                    backgroundImage: `url(${image})`,
+                  }}
+                ></Page.SpecialImageContainer>
+
+                <Page.Project>
+                  <Page.FeaturedProjectTitle>
+                    {title}
+                    <br />
+                    <span>{client}</span>
+                  </Page.FeaturedProjectTitle>
+
+                  <p>
+                    {description}
+                    <br />
+                    <a href={link}>More &rarr;</a>
+                  </p>
+                </Page.Project>
+              </Page.Special>
+            ))}
         </section>
 
         <section>
           <Page.Projects>
-            {PROJECTS.map(({ client, description, image, title }) => (
-              <Page.Project key={title}>
-                <Page.ProjectImageContainer
-                  href="/project/apple-tv-breakaway"
-                  style={{ backgroundImage: `url(${image})` }}
-                ></Page.ProjectImageContainer>
+            {projects
+              .filter((project) => !project.featured)
+              .map(({ client, description, link, image, title }) => (
+                <Page.Project key={title}>
+                  <Page.ProjectImageContainer
+                    href={link}
+                    style={{ backgroundImage: `url(${image})` }}
+                  ></Page.ProjectImageContainer>
 
-                <Page.ProjectTitle>
-                  {title}
-                  <br />
-                  <span>{client}</span>
-                </Page.ProjectTitle>
+                  <Page.ProjectTitle>
+                    {title}
+                    <br />
+                    <span>{client}</span>
+                  </Page.ProjectTitle>
 
-                <p dangerouslySetInnerHTML={{ __html: description }}></p>
-                <br />
-                <a href="/project/apple-tv-breakaway">More &rarr;</a>
-              </Page.Project>
-            ))}
+                  <p>
+                    {description}
+                    <br />
+                    <a href={link}>More &rarr;</a>
+                  </p>
+                </Page.Project>
+              ))}
           </Page.Projects>
         </section>
       </Wrap>
