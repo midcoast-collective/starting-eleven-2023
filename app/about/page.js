@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 import Wrap from "@/app/components/wrap";
-import * as Page from "@/app/components/page";
+import * as Page from "@/app/components/pageComponents";
 import ImageWithVideoModal from "@/app/components/imageWithVideoModal";
 
 export const metadata = {
@@ -43,6 +43,16 @@ export default function AboutPage() {
           "/project/fc-24-cover-shoot/gallery/EA_FC24_STD_Gen4_KeyArt_RGB_16-9_7680x4320.jpg",
         description:
           "Starting Eleven founding partner and lead photographer, Devin L'Amoreaux was hired to photograph eventual cover star, Erling Haaland, and another high profile player, over the course of 2 football matches. The agency were already big fans of Devin's in-game photography and trusted he was the right photographer for the job.",
+      },
+      {
+        id: 4,
+        client: "Trickybeas",
+        featured: false,
+        link: "/project/ultimate-team-heroes-campaign",
+        title: "Ultimate Team Heroes Campaign",
+        image: "/project/ultimate-team-heroes-campaign/gallery/1.jpg",
+        description:
+          "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. The inspiration was taken from X-Men to slow everying down around him to prep for the PSV Champion League Match. With less then two weeks time to produce, film and edit. We built out a team comprised of specialized people to execute the vision quickly.",
       },
     ],
     []

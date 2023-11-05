@@ -4,7 +4,7 @@ import Wrap from "@/app/components/wrap";
 import Gallery from "@/app/components/gallery";
 import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
-import * as Page from "@/app/components/page";
+import * as Page from "@/app/components/pageComponents";
 
 export const metadata = {
   title: "FC 24 Cover Shoot EA Sports - Starting Eleven",

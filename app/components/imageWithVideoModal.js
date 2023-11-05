@@ -6,7 +6,7 @@ import Button from "@restart/ui/Button";
 import Modal from "@restart/ui/Modal";
 
 import ResponsivePlayer from "./responsivePlayer";
-import * as Page from "@/app/components/page";
+import * as Page from "@/app/components/pageComponents";
 
 export const PlayButton = styled.div`
   color: var(--color-white);

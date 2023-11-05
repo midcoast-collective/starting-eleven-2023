@@ -1,5 +1,5 @@
 import Wrap from "@/app/components/wrap";
-import * as Page from "@/app/components/page";
+import * as Page from "@/app/components/pageComponents";
 import * as Contact from "@/app/components/contact";
 import ContactForm from "../components/contactForm";
 

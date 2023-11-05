@@ -1,5 +1,5 @@
 import ResponsivePlayer from "@/app/components/responsivePlayer";
-import * as Page from "@/app/components/page";
+import * as Page from "@/app/components/pageComponents";
 
 export const metadata = {
   title: "Starting Eleven",
