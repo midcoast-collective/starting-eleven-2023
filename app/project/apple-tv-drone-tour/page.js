@@ -17,13 +17,13 @@ export default function ProjectPage() {
 
   const slides = useMemo(
     () => [
-      "/project/apple-tv-drone-tour/gallery/ATL_DRONE_TOUR_LAMOREAUXDML09801.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021440.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021518.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021571-Enhanced-NR.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021617.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021631.jpg",
-      "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021685.jpg",
+      "/project/apple-tv-drone-tour/gallery/1.jpg",
+      "/project/apple-tv-drone-tour/gallery/2.jpg",
+      "/project/apple-tv-drone-tour/gallery/3.jpg",
+      "/project/apple-tv-drone-tour/gallery/4.jpg",
+      "/project/apple-tv-drone-tour/gallery/5.jpg",
+      "/project/apple-tv-drone-tour/gallery/6.jpg",
+      "/project/apple-tv-drone-tour/gallery/7.jpg",
     ],
     []
   );

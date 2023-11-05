@@ -28,8 +28,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/apple-tv-drone-tour",
         title: "Drone Tour",
-        image:
-          "/project/apple-tv-drone-tour/gallery/lamoreaux_portland_drone_tourL1021571-Enhanced-NR.jpg",
+        image: "/project/apple-tv-drone-tour/gallery/1.jpg",
         description:
           "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
       },
@@ -39,8 +38,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/fc-24-cover-shoot",
         title: "FC 24 Cover Shoot",
-        image:
-          "/project/fc-24-cover-shoot/gallery/EA_FC24_STD_Gen4_KeyArt_RGB_16-9_7680x4320.jpg",
+        image: "/project/fc-24-cover-shoot/gallery/1.jpg",
         description:
           "Starting Eleven founding partner and lead photographer, Devin L'Amoreaux was hired to photograph eventual cover star, Erling Haaland, and another high profile player, over the course of 2 football matches. The agency were already big fans of Devin's in-game photography and trusted he was the right photographer for the job.",
       },
@@ -63,6 +61,25 @@ export default function AboutPage() {
         image: "/project/fifa-world-cup-qatar/gallery/8.jpg",
         description:
           "This was Devin's first time photographing at a World Cup. He used his relationships, connections and observational skills to soak in all the information he could upon his arrival. Looking for opportunities where he could excel at the tournament and have his photos stand out from the hundreds of other photographers there.",
+      },
+      {
+        id: 6,
+        client: "Major League Soccer",
+        featured: false,
+        link: "/project/leagues-cup",
+        title: "Leagues Cup",
+        image: "/project/leagues-cup/gallery/2.jpg",
+        description:
+          "Going beyond the ask of game capture, we wanted to create a iconic moment that lived forever as something written as history. Devin L'Amoreaux, pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
+      },
+      {
+        id: 7,
+        client: "Major League Soccer",
+        featured: false,
+        link: "/project/leagues-cup",
+        title: "Messi Mania",
+        image: "/project/messi-mania/gallery/2.jpg",
+        description: "",
       },
     ],
     []

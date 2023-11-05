@@ -17,16 +17,17 @@ export default function ProjectPage() {
 
   const slides = useMemo(
     () => [
-      "/project/fc-24-cover-shoot/gallery/Spotify _ NYCD-501 _ 09-20-23 _ 1.jpg",
-      "/project/fc-24-cover-shoot/gallery/EAFC24_Playstation-Store_STD.jpg",
-      "/project/fc-24-cover-shoot/gallery/EAS_FC24_Clamshell_STD.jpg",
+      "/project/fc-24-cover-shoot/gallery/1.jpg",
+      "/project/fc-24-cover-shoot/gallery/2.jpg",
+      "/project/fc-24-cover-shoot/gallery/3.jpg",
+      "/project/fc-24-cover-shoot/gallery/4.jpg",
     ],
     []
   );
 
   return (
     <main>
-      <Page.Placeholder $image="/project/fc-24-cover-shoot/gallery/EA_FC24_STD_Gen4_KeyArt_RGB_16-9_7680x4320.jpg" />
+      <Page.Placeholder $image="/project/fc-24-cover-shoot/gallery/4.jpg" />
 
       <Project.ContentSection>
         <Wrap>
