@@ -26,6 +26,11 @@ export const Gallery = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 42rem;
+
+    @media (max-width: 800px) {
+      max-height: 12rem;
+    }
   }
 `;
 
@@ -45,7 +50,7 @@ export default function GalleryComponent({ data }) {
           800: {
             slidesPerView: 1.1,
             spaceBetween: 48,
-            height: "33rem",
+            height: "42rem",
           },
         }}
       >

@@ -7,7 +7,7 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Drone Tour - Apple TV",
+  title: "Drone Tour Apple TV - Starting Eleven",
   description:
     "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
 };
@@ -52,9 +52,9 @@ export default function ProjectPage() {
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
               Combine cinematic high resolution drone footage with dynamic FPV
-              to tell the story of each club. Over the course of 3 years, we’ve
-              expanded on the series to include a live game and local celebrity
-              host to help tell authentic story for each club.
+              to tell the story of each club. Over the course of 3 years,
+              we&apos;ve expanded on the series to include a live game and local
+              celebrity host to help tell authentic story for each club.
             </p>
           </Project.ProjectSection>
 

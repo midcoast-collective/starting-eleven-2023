@@ -33,6 +33,17 @@ export default function AboutPage() {
         description:
           "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
       },
+      {
+        id: 3,
+        client: "EA Sports",
+        featured: false,
+        link: "/project/fc-24-cover-shoot",
+        title: "FC 24 Cover Shoot",
+        image:
+          "/project/fc-24-cover-shoot/gallery/EA_FC24_STD_Gen4_KeyArt_RGB_16-9_7680x4320.jpg",
+        description:
+          "Starting Eleven founding partner and lead photographer, Devin L'Amoreaux was hired to photograph eventual cover star, Erling Haaland, and another high profile player, over the course of 2 football matches. The agency were already big fans of Devin's in-game photography and trusted he was the right photographer for the job.",
+      },
     ],
     []
   );
@@ -102,6 +113,7 @@ export default function AboutPage() {
                   <p>
                     {description}
                     <br />
+                    <br />
                     <a href={link}>More &rarr;</a>
                   </p>
                 </Page.Project>
@@ -128,6 +140,7 @@ export default function AboutPage() {
 
                   <p>
                     {description}
+                    <br />
                     <br />
                     <a href={link}>More &rarr;</a>
                   </p>
