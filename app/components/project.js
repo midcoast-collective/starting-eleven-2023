@@ -16,9 +16,12 @@ export const ProjectTitle = styled.h1`
 
 export const ProjectSection = styled.div`
   padding: 1.5rem 0;
-  display: grid;
-  grid-template-columns: var(--grid-columns-three);
-  column-gap: 3rem;
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: var(--grid-columns-three);
+    column-gap: 3rem;
+  }
 
   p {
     grid-column: 2 / 4;
@@ -37,6 +40,10 @@ export const ProjectSectionTitle = styled.h2`
   padding: 0 0 0.75rem;
   text-align: ${({ $align }) => $align ?? "right"};
   text-transform: uppercase;
+
+  @media (max-width: 800px) {
+    text-align: left;
+  }
 `;
 
 export const QuoteSection = styled.section`

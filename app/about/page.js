@@ -14,7 +14,7 @@ export default function AboutPage() {
     () => [
       {
         id: 1,
-        client: "MLS x AppleTV",
+        client: "MLS + AppleTV",
         featured: true,
         title: "Breakaway",
         image: "",
@@ -24,7 +24,7 @@ export default function AboutPage() {
       },
       {
         id: 2,
-        client: "MLS x AppleTV",
+        client: "MLS + AppleTV",
         featured: false,
         link: "/project/apple-tv-drone-tour",
         title: "Drone Tour",
@@ -53,6 +53,16 @@ export default function AboutPage() {
         image: "/project/ultimate-team-heroes-campaign/gallery/1.jpg",
         description:
           "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. The inspiration was taken from X-Men to slow everying down around him to prep for the PSV Champion League Match. With less then two weeks time to produce, film and edit. We built out a team comprised of specialized people to execute the vision quickly.",
+      },
+      {
+        id: 5,
+        client: "Adidas + MLS",
+        featured: false,
+        link: "/project/fifa-world-cup-qatar",
+        title: "FIFA World Cup Qatar 2022™",
+        image: "/project/fifa-world-cup-qatar/gallery/1.jpg",
+        description:
+          "This was Devin's first time photographing at a World Cup. He used his relationships, connections and observational skills to soak in all the information he could upon his arrival. Looking for opportunities where he could excel at the tournament and have his photos stand out from the hundreds of other photographers there.",
       },
     ],
     []

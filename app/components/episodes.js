@@ -16,7 +16,7 @@ export const Episodes = styled.section`
 `;
 
 const PrevArrow = styled.div`
-  padding: var(--font-size-heading-large);
+  padding: 0.75rem;
   visibility: ${({ $visible }) => ($visible ? "visible" : "hidden")};
 
   &::after {
