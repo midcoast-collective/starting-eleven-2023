@@ -7,7 +7,7 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Drone Tour Apple TV - Starting Eleven",
+  title: "Drone Tour  TV - Starting Eleven",
   description:
     "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
 };
@@ -37,7 +37,7 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Drone Tour - Apple TV</Project.ProjectTitle>
+          <Project.ProjectTitle>Drone Tour -  TV</Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope

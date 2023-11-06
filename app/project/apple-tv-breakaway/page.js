@@ -7,7 +7,7 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Breakaway Apple TV - Starting Eleven",
+  title: "Breakaway  TV - Starting Eleven",
   description:
     "This project is a big undertaking for us balancing a players personal time and achieving high quality through the camera and story. Sometimes the equation doesn't favor us but that's what makes us the best at what we do. We know how to be in the players shoes and bring the best out of them.",
 };
@@ -72,7 +72,7 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Breakaway - Apple TV</Project.ProjectTitle>
+          <Project.ProjectTitle>Breakaway -  TV</Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope

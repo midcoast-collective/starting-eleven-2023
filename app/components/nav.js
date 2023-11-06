@@ -33,8 +33,8 @@ const StyledLink = styled.a`
 export default function NavComponent() {
   return (
     <Nav>
-      <StyledLink href="/about">About</StyledLink>
-      <StyledLink href="/about#projects">Projects</StyledLink>
+      <StyledLink href="/#about">About</StyledLink>
+      <StyledLink href="/#projects">Projects</StyledLink>
       <StyledLink className="last" href="/contact">
         Contact
       </StyledLink>

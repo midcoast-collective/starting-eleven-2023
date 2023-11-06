@@ -39,9 +39,8 @@ export default function ContactPage() {
           <Contact.Locations>
             <div>
               <p>
-                730 Minnesota Ave.
+                730 Minnesota Ave. STE C
                 <br />
-                STE C<br />
                 Kansas City, KS 66101
                 <br />
                 <a
