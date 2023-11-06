@@ -82,6 +82,16 @@ export default function AboutPage() {
         description:
           "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us.",
       },
+      {
+        id: 8,
+        client: "2023",
+        featured: false,
+        link: "/project/mextour",
+        title: "Mextour",
+        image: "/project/mextour/gallery/14.jpg",
+        description:
+          "We all know games are best recapped immediately after. So we built a system that gets a creative edit within hours of the game to relive the game the very next morning using frame to cloud and a highly talented internal coverage team.",
+      },
     ],
     []
   );
