@@ -21,8 +21,8 @@ export default function ContactPage() {
             <Contact.Title>Contact</Contact.Title>
             <p>
               Want to tell your soccer story? Reach out via email (
-              <a href="mailto:info@startingeleven.com">
-                info@startingeleven.com
+              <a href="mailto:hello@startingeleven.com">
+                hello@startingeleven.com
               </a>
               ) or fill out this form and we will get back to you ASAP.
             </p>
