@@ -88,7 +88,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/mextour",
         title: "Mextour",
-        image: "/project/mextour/gallery/14.jpg",
+        image: "/project/mextour/gallery/8.jpg",
         description:
           "We all know games are best recapped immediately after. So we built a system that gets a creative edit within hours of the game to relive the game the very next morning using frame to cloud and a highly talented internal coverage team.",
       },
