@@ -38,7 +38,6 @@ export default function ContactPage() {
 
           <Contact.Locations>
             <div>
-              <p>IMAGE</p>
               <p>
                 730 Minnesota Ave.
                 <br />
@@ -55,7 +54,6 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <p>IMAGE</p>
               <p>
                 27 Market Street
                 <br />
