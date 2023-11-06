@@ -30,7 +30,6 @@ export default function ProjectPage() {
       "/project/leagues-cup/gallery/11.jpg",
       "/project/leagues-cup/gallery/12.jpg",
       "/project/leagues-cup/gallery/13.jpg",
-      "/project/leagues-cup/gallery/14.jpg",
     ],
     []
   );
