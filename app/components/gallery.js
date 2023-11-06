@@ -27,16 +27,19 @@ export const Gallery = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  .swiper-slide img {
-    width: auto;
     height: 42rem;
-    user-select: none;
 
     @media (max-width: 800px) {
       height: 12rem;
     }
+  }
+
+  .swiper-slide img {
+    object-fit: cover;
+    user-select: none;
+    min-height: 100%;
+    min-width: 100%;
   }
 `;
 
