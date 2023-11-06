@@ -28,6 +28,8 @@ export default function ProjectPage() {
       "/project/messi-mania/gallery/9.jpg",
       "/project/messi-mania/gallery/10.jpg",
       "/project/messi-mania/gallery/11.jpg",
+      "/project/messi-mania/gallery/12.jpg",
+      "/project/messi-mania/gallery/13.jpg",
       "/project/messi-mania/gallery/14.jpg",
       "/project/messi-mania/gallery/15.jpg",
     ],

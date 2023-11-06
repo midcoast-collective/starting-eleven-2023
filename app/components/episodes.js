@@ -21,7 +21,7 @@ const PrevArrow = styled.div`
 
   &::after {
     content: "prev";
-    color: var(--color-black);
+    color: var(--color-green);
     cursor: pointer;
     font-family: swiper-icons;
     font-size: var(--font-size-heading-large);

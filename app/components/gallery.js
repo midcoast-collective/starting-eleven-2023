@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 export const Gallery = styled.section`
   --swiper-theme-color: var(--color-white);
   --swiper-navigation-size: var(--font-size-heading-large);
-  // --swiper-navigation-color: var(--color-green);
+  --swiper-navigation-color: var(--color-green);
   --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
   --swiper-scrollbar-drag-bg-color: var(--color-green);
   --swiper-scrollbar-bottom: -1rem;
@@ -21,15 +21,20 @@ export const Gallery = styled.section`
     overflow: visible;
   }
 
+  .swiper-slide {
+    background-color: var(--color-gray);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-height: 42rem;
+    width: auto;
+    height: 42rem;
 
     @media (max-width: 800px) {
-      max-height: 12rem;
+      height: 12rem;
     }
   }
 `;

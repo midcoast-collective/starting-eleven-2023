@@ -18,16 +18,18 @@ export default function ProjectPage() {
   const slides = useMemo(
     () => [
       "/project/mextour/gallery/1.jpg",
-      "/project/mextour/gallery/2.jpg",
+      // "/project/mextour/gallery/2.jpg",
       "/project/mextour/gallery/3.jpg",
       "/project/mextour/gallery/4.jpg",
       "/project/mextour/gallery/5.jpg",
       "/project/mextour/gallery/6.jpg",
-      "/project/mextour/gallery/7.jpg",
+      // "/project/mextour/gallery/7.jpg",
       "/project/mextour/gallery/8.jpg",
       "/project/mextour/gallery/9.jpg",
       "/project/mextour/gallery/10.jpg",
-      "/project/mextour/gallery/11.jpg",
+      // "/project/mextour/gallery/11.jpg",
+      "/project/mextour/gallery/12.jpg",
+      "/project/mextour/gallery/13.jpg",
       "/project/mextour/gallery/14.jpg",
     ],
     []
@@ -37,7 +39,7 @@ export default function ProjectPage() {
     <main>
       <ResponsivePlayer
         desktop="https://vimeo.com/879446806"
-        mobile="https://vimeo.com/880027068"
+        mobile="https://vimeo.com/879446806"
       />
 
       <Project.ContentSection>
@@ -89,9 +91,12 @@ export default function ProjectPage() {
               Photography: Devin L&apos;Amoreaux
             </p>
           </Project.ProjectSection>
-
-          {episodes.length > 0 ? <Episodes data={episodes} /> : null}
         </Wrap>
+
+        <ResponsivePlayer
+          desktop="https://vimeo.com/880027068"
+          mobile="https://vimeo.com/880027068"
+        />
       </Project.ContentSection>
 
       <Project.QuoteSection>
