@@ -75,12 +75,12 @@ export default function AboutPage() {
       {
         id: 7,
         client: "Apple TV",
-        featured: false,
+        featured: true,
         link: "/project/messi-mania",
         title: "Messi Mania",
         image: "/project/messi-mania/gallery/3.jpg",
         description:
-          "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us. ",
+          "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us.",
       },
     ],
     []

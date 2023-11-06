@@ -42,7 +42,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const Projects = styled.div`
-  padding: 3rem 0;
+  padding: 0 0 6rem;
 
   @media (min-width: 800px) {
     column-gap: 3rem;
@@ -122,6 +122,8 @@ export const AboutImageContainer = styled.div`
 `;
 
 export const Special = styled.div`
+  margin-bottom: 3rem;
+
   @media (min-width: 800px) {
     column-gap: 3rem;
     display: grid;
