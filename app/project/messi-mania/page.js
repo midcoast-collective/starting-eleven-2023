@@ -8,7 +8,8 @@ import * as Project from "@/app/components/project";
 
 export const metadata = {
   title: "Messi Mania - Starting Eleven",
-  description: "",
+  description:
+    "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us.",
 };
 
 export default function ProjectPage() {
@@ -50,22 +51,32 @@ export default function ProjectPage() {
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Create Mutiple Ad&apos;s for all 77 games for the world cup style
-              tournament between two leagues; liga mx and mls, in three
-              languages.
+              Explore the global hype surrounding the move by Lionel Messi to
+              Major League Soccer, the ripple effect it has sent through the
+              world of soccer, the media craze that ensued, and contrast it all
+              with the simplicity of the player stepping on to the pitch and
+              playing the beautiful game.
             </p>
           </Project.ProjectSection>
 
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
-              We covered over 20+ games to create high quality capture in the
-              later rounds to turn ticket sell ads around in 48 hours. We built
-              a expanded team of soccer enthusiast to tackle three different
-              languages; spanish, french, and english. We made custom videos for
-              every single match that included; a custom animation graphics
-              package, voice-over scripts, In-stadium game presenaton videos,
-              and ads for all media outlets.
+              &quot;Zidane: A 21st Century Portrait&quot;
+              <br />
+              <br />
+              When we see Messi, his name is enough to feel something. We
+              understood that him playing is enough for futbol fans to drool
+              over. So we took aspects from the beautiful doc of Zidane and
+              integrated the mass media around him to build up the iconic goal
+              he made on his debut.
+              <br />
+              <br />
+              The timing was difficult. The greenlight came 2 days before his
+              unveil and had to navigate the media craze. While only approved
+              for a limited amount of credentials we decided to have one camera
+              roaming and one with the largest zoom possible to capture all the
+              emotion and play.
             </p>
           </Project.ProjectSection>
 
@@ -74,15 +85,37 @@ export default function ProjectPage() {
             <p>
               Produced by: Starting Eleven
               <br />
-              Director of Operations: Brandon Bland
+              Directors: Casey Wertz & Devin L&apos;Amoreaux
               <br />
-              Director: Casey Wertz
+              Dp: Keith Dixon
               <br />
-              Animation: Ben Makovsky and Maria Babcock
+              Gimbal Op: Joe Sanchez
               <br />
-              Editors: Chris Burrow, Jason Cadena, Luis Villarreal, Stoney Yoos
+              Ac: Jason Cadena
               <br />
-              Lead Photographer: Devin L&apos;Amoreaux
+              Music + sound mix: Zane Callister
+              <br />
+              Sound design: Christian O&apos;Keefe
+              <br />
+              Color: Ian Matthews
+              <br />
+              Edit: Christian O&apos;Keefe
+              <br />
+              <br />
+              MLS Producers:
+              <br />
+              Kyle Green
+              <br />
+              Galina Plutova
+              <br />
+              <br />
+              Special Thanks:
+              <br />
+              Inter Miami CF
+              <br />
+              Molly Dreska
+              <br />
+              Rafa Cabrera
             </p>
           </Project.ProjectSection>
 
@@ -92,11 +125,12 @@ export default function ProjectPage() {
 
       <Project.QuoteSection>
         <p>
-          Going beyond the ask of game capture, we wanted to create a iconic
-          moment that lived forever as something written as history. Devin
-          L&apos;Amoreaux, pitched the idea of a trophy room moment with the
-          legendary Inter Miami team. Something we pride ourselves in is going
-          the extra mile to achieve greatness.
+          Originally a doc that was suppose to be comprised of a few games
+          dwindled to one as it was enough to tell the story in our opinion. We
+          captured argentina fans bowing down to a mural of messi, fans fighting
+          their way into the training center to see messi, to messi winning his
+          first game on a free kick in the closing minute. The script was
+          written for us.
         </p>
       </Project.QuoteSection>
 
@@ -117,9 +151,9 @@ export default function ProjectPage() {
           culpa qui officia deserunt mollit anim id est laborum.&quot;
         </p>
         <p className="author">
-          - Brandon Bland
+          - Zane Callister
           <br />
-          Starting Eleven, Director of Operations
+          Score and Mix
         </p>
       </Project.QuoteSection>
     </main>

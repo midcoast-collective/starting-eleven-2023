@@ -74,12 +74,13 @@ export default function AboutPage() {
       },
       {
         id: 7,
-        client: "Major League Soccer",
+        client: "Apple TV",
         featured: false,
-        link: "/project/leagues-cup",
+        link: "/project/messi-mania",
         title: "Messi Mania",
-        image: "/project/messi-mania/gallery/2.jpg",
-        description: "",
+        image: "/project/messi-mania/gallery/3.jpg",
+        description:
+          "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us. ",
       },
     ],
     []
