@@ -52,6 +52,7 @@ export const Episode = styled.a`
     height: 100%;
     max-height: 10rem;
     object-fit: cover;
+    user-select: none;
   }
 
   h3 {

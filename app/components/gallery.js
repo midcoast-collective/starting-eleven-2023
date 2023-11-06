@@ -32,6 +32,7 @@ export const Gallery = styled.section`
   .swiper-slide img {
     width: auto;
     height: 42rem;
+    user-select: none;
 
     @media (max-width: 800px) {
       height: 12rem;
