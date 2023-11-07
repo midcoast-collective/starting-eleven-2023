@@ -92,7 +92,7 @@ export default function ProjectPage() {
     <main>
       <ResponsivePlayer
         desktop="https://vimeo.com/880027959"
-        mobile="https://vimeo.com/880027959"
+        mobile="https://vimeo.com/882207054"
       />
 
       <Project.ContentSection>
