@@ -36,7 +36,7 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            FIFA World Cup Qatar 2022™ // Adidas
+            FIFA World Cup Qatar 2022™ <span>{"//"}</span> Adidas
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>

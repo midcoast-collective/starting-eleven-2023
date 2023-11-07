@@ -97,7 +97,9 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Breakaway //  TV</Project.ProjectTitle>
+          <Project.ProjectTitle>
+            Breakaway <span>{"//"}</span>  TV
+          </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope

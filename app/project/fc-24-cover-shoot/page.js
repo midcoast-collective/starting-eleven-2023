@@ -32,7 +32,7 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            FC 24 Cover Shoot // EA Sports
+            FC 24 Cover Shoot <span>{"//"}</span> EA Sports
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>

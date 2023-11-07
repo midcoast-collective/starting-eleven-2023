@@ -130,7 +130,9 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Drone Tour //  TV</Project.ProjectTitle>
+          <Project.ProjectTitle>
+            Drone Tour <span>{"//"}</span>  TV
+          </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope

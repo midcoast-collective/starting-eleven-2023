@@ -36,7 +36,7 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            Ultimate Team Heroes Campaign // Trickybeas x EAFC
+            Ultimate Team Heroes Campaign <span>{"//"}</span> Trickybeas x EAFC
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>

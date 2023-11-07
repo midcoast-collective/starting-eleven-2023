@@ -39,7 +39,7 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            Mextour // Mexican National Team
+            Mextour <span>{"//"}</span> Mexican National Team
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>

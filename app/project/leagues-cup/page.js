@@ -44,7 +44,7 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            Leagues Cup // Major League Soccer
+            Leagues Cup <span>{"//"}</span> Major League Soccer
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>

@@ -13,6 +13,10 @@ export const ProjectTitle = styled.h1`
   padding: 3rem 0;
   text-align: center;
   text-transform: uppercase;
+
+  span {
+    font-weight: 100;
+  }
 `;
 
 export const ProjectSection = styled.div`
