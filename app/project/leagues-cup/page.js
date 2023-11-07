@@ -7,9 +7,9 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Leagues Cup - Starting Eleven",
+  title: "Leagues Cup // Major League Soccer - Starting Eleven",
   description:
-    "Going beyond the ask of game capture, we wanted to create a iconic moment that lived forever as something written as history. Devin L'Amoreaux, pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
+    "Going beyond the ask of game capture, we wanted to create an iconic moment that lived forever as something written as history. Devin L'Amoreaux pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
 };
 
 export default function ProjectPage() {
@@ -44,15 +44,15 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            Leagues Cup - Major League Soccer
+            Leagues Cup // Major League Soccer
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Create Mutiple Ad&apos;s for all 77 games for the world cup style
-              tournament between two leagues; liga mx and mls, in three
+              Create multiple Ads for all 77 games for the World Cup-style
+              tournament between two leagues, Liga MX and MLS, in three
               languages.
             </p>
           </Project.ProjectSection>
@@ -60,13 +60,13 @@ export default function ProjectPage() {
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
-              We covered over 20+ games to create high quality capture in the
-              later rounds to turn ticket sell ads around in 48 hours. We built
-              a expanded team of soccer enthusiast to tackle three different
-              languages; spanish, french, and english. We made custom videos for
-              every single match that included; a custom animation graphics
-              package, voice-over scripts, In-stadium game presenaton videos,
-              and ads for all media outlets.
+              We covered over 20+ games to create high-quality capture in the
+              later rounds to turn ticket-sell ads around in 48 hours. We built
+              an expanded team of soccer enthusiasts to tackle three languages:
+              Spanish, French, and English. We made custom videos for every
+              match that included a custom animation graphics package,
+              voice-over scripts, In-stadium game presentation videos, and ads
+              for all media outlets.
             </p>
           </Project.ProjectSection>
 
@@ -84,6 +84,10 @@ export default function ProjectPage() {
               Editors: Chris Burrow, Jason Cadena, Luis Villarreal, Stoney Yoos
               <br />
               Lead Photographer: Devin L&apos;Amoreaux
+              <br />
+              Video Coverage team: Jason Cadena, Luis Villareal, Nelson Chavez,
+              Nick Brown, Hanin Atighi, Lauren Terry, Jordan Borel, Julian
+              Bright, Rodolfo Chona, Keith Dixon
             </p>
           </Project.ProjectSection>
 
@@ -93,9 +97,9 @@ export default function ProjectPage() {
 
       <Project.QuoteSection>
         <p>
-          Going beyond the ask of game capture, we wanted to create a iconic
+          Going beyond the ask of game capture, we wanted to create an iconic
           moment that lived forever as something written as history. Devin
-          L&apos;Amoreaux, pitched the idea of a trophy room moment with the
+          L&apos;Amoreaux pitched the idea of a trophy room moment with the
           legendary Inter Miami team. Something we pride ourselves in is going
           the extra mile to achieve greatness.
         </p>
@@ -109,13 +113,12 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.&quot;
+          &quot;Coordinating the creation of over 400 assets has been
+          exhilarating. Working with a creative team allowed us to push the
+          boundaries of how to showcase this special event. The assets we
+          created bled into our capturing of some of the Leagues Cup matches. At
+          times, those same people who worked on our assets could watch their
+          work in real-time on the big stage!&quot;
         </p>
         <p className="author">
           - Brandon Bland

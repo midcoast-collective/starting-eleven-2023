@@ -7,9 +7,9 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Messi Mania - Starting Eleven",
+  title: "Messi Mania //  TV - Starting Eleven",
   description:
-    "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us.",
+    "Initially, a doc that was supposed to comprise a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
 };
 
 export default function ProjectPage() {
@@ -45,18 +45,16 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>
-            Leagues Cup - Major League Soccer
-          </Project.ProjectTitle>
+          <Project.ProjectTitle>Messi Mania //  TV</Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Explore the global hype surrounding the move by Lionel Messi to
+              Explore the global hype surrounding the move of Lionel Messi to
               Major League Soccer, the ripple effect it has sent through the
-              world of soccer, the media craze that ensued, and contrast it all
-              with the simplicity of the player stepping on to the pitch and
+              world of soccer, and the media craze that ensued, and contrast it
+              all with the simplicity of the player stepping onto the pitch and
               playing the beautiful game.
             </p>
           </Project.ProjectSection>
@@ -68,17 +66,17 @@ export default function ProjectPage() {
               <br />
               <br />
               When we see Messi, his name is enough to feel something. We
-              understood that him playing is enough for futbol fans to drool
+              understood that his playing is enough for futbol fans to drool
               over. So we took aspects from the beautiful doc of Zidane and
               integrated the mass media around him to build up the iconic goal
               he made on his debut.
               <br />
               <br />
-              The timing was difficult. The greenlight came 2 days before his
-              unveil and had to navigate the media craze. While only approved
-              for a limited amount of credentials we decided to have one camera
-              roaming and one with the largest zoom possible to capture all the
-              emotion and play.
+              The timing could have been better. The green light came two days
+              before his unveiling, and we had to navigate the media craze.
+              While only approved for a limited amount of credentials, we
+              decided to have one camera roaming and one with the largest zoom
+              possible to capture all the emotion and play.
             </p>
           </Project.ProjectSection>
 
@@ -103,21 +101,9 @@ export default function ProjectPage() {
               <br />
               Edit: Christian O&apos;Keefe
               <br />
+              MLS Producers: Kyle Green, Galina Plutova
               <br />
-              MLS Producers:
-              <br />
-              Kyle Green
-              <br />
-              Galina Plutova
-              <br />
-              <br />
-              Special Thanks:
-              <br />
-              Inter Miami CF
-              <br />
-              Molly Dreska
-              <br />
-              Rafa Cabrera
+              Special Thanks: Inter Miami CF, Molly Dreska, Rafa Cabrera
             </p>
           </Project.ProjectSection>
 
@@ -127,12 +113,11 @@ export default function ProjectPage() {
 
       <Project.QuoteSection>
         <p>
-          Originally a doc that was suppose to be comprised of a few games
-          dwindled to one as it was enough to tell the story in our opinion. We
-          captured argentina fans bowing down to a mural of messi, fans fighting
-          their way into the training center to see messi, to messi winning his
-          first game on a free kick in the closing minute. The script was
-          written for us.
+          Initially, a doc that was supposed to comprise a few games dwindled to
+          one as it was enough to tell the story. We captured Argentina fans
+          bowing down to a mural of Messi, fans fighting their way into the
+          training center to see Messi, and Messi winning his first game on a
+          free kick in the closing minute. The script was written for us.
         </p>
       </Project.QuoteSection>
 

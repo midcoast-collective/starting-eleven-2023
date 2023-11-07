@@ -7,7 +7,7 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Mextour - Starting Eleven",
+  title: "Mextour // Mexican National Team - Starting Eleven",
   description:
     "We all know games are best recapped immediately after. So we built a system that gets a creative edit within hours of the game to relive the game the very next morning using frame to cloud and a highly talented internal coverage team.",
 };
@@ -38,25 +38,27 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Mextour - 2023</Project.ProjectTitle>
+          <Project.ProjectTitle>
+            Mextour // Mexican National Team
+          </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Player content capture, same-day-edits, custom graphics, original
-              content, and story driven content.
+              Player content capture, same-day edits, custom graphics, original
+              content, and story-driven content.
             </p>
           </Project.ProjectSection>
 
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
-              For media day specifically, the concept came with the idea that a
-              lot of players can change for each fifa window and knew we wanted
-              a way to integrate players that were missing but push the creative
-              as far as possible. We decided to do a floor and video wall to
-              show off each players identity.
+              For media day specifically, the concept came with the idea that
+              many players can change for each FIFA window, and we knew we
+              wanted a way to integrate missing players but push the creative as
+              far as possible. We did a floor and video wall to show each
+              player&apos;s identity.
             </p>
           </Project.ProjectSection>
 
@@ -73,19 +75,14 @@ export default function ProjectPage() {
               <br />
               AC: Jason Cadena
               <br />
-              <br />
-              Animation:
-              <br />
-              Maria Babcock
-              <br />
-              Nico
-              <br />
-              Ben Makovsky
+              Animation: Maria Babcock, Nico, Ben Makovsky
               <br />
               Photography: Devin L&apos;Amoreaux
             </p>
           </Project.ProjectSection>
         </Wrap>
+
+        {episodes.length > 0 ? <Episodes data={episodes} /> : null}
 
         <ResponsivePlayer
           desktop="https://vimeo.com/880027068"
@@ -97,7 +94,7 @@ export default function ProjectPage() {
         <p>
           We all know games are best recapped immediately after. So we built a
           system that gets a creative edit within hours of the game to relive
-          the game the very next morning using frame to cloud and a highly
+          the game the very next morning using frame-to-cloud and a highly
           talented internal coverage team.
         </p>
       </Project.QuoteSection>
@@ -110,16 +107,15 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.&quot;
+          &quot;Mextour Media Day 2023 has been an incredibly fulfilling project
+          for me. Directing emerging talents like Santiago Gimenez and
+          established legends like Guillermo Ochoa is always a privilege, and
+          this time was no exception. The entire team came together to create a
+          remarkable experience for our client and their players, and it&apos;s
+          moments like these that make our work truly rewarding.&quot;
         </p>
         <p className="author">
-          - - Luis Villareal
+          - Luis Villareal
           <br />
           Starting Eleven, Video Editor
         </p>

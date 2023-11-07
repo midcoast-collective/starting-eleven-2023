@@ -14,23 +14,23 @@ export default function AboutPage() {
     () => [
       {
         id: 1,
-        client: "MLS +  TV",
+        client: "MLS x  TV",
         featured: true,
         title: "Breakaway",
-        image: "",
+        image: "/project/apple-tv-breakaway/gallery/21.jpg",
         link: "/project/apple-tv-breakaway",
         description:
-          "This project is a big undertaking for us balancing a players personal time and achieving high quality through the camera and story. Sometimes the equation doesn't favor us but that's what makes us the best at what we do. We know how to be in the players shoes and bring the best out of them.",
+          "This project is a big undertaking for us, balancing a player's time and achieving high quality through the camera and story. Sometimes, the equation doesn't favor us, but that is what makes us the best at what we do. We know how to be in the player's shoes and bring the best out of them.",
       },
       {
         id: 2,
-        client: "MLS +  TV",
+        client: "MLS x  TV",
         featured: false,
         link: "/project/apple-tv-drone-tour",
         title: "Drone Tour",
-        image: "/project/apple-tv-drone-tour/gallery/1.jpg",
+        image: "/project/apple-tv-drone-tour/gallery/13.jpg",
         description:
-          "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
+          "Combine cinematic high-resolution drone footage with dynamic FPV to tell the story of each club. For three years, we've expanded the series to include a live game and a local celebrity host to help tell authentic stories for each club.",
       },
       {
         id: 3,
@@ -40,21 +40,21 @@ export default function AboutPage() {
         title: "FC 24 Cover Shoot",
         image: "/project/fc-24-cover-shoot/gallery/1.jpg",
         description:
-          "Starting Eleven founding partner and lead photographer, Devin L'Amoreaux was hired to photograph eventual cover star, Erling Haaland, and another high profile player, over the course of 2 football matches. The agency were already big fans of Devin's in-game photography and trusted he was the right photographer for the job.",
+          "Starting Eleven founding partner and lead photographer Devin L'Amoreaux, was hired to photograph eventual cover star Erling Haaland and another high-profile player over the course of 2 football matches. The agency was already big fans of Devin's in-game photography and trusted he was the right photographer for the job.",
       },
       {
         id: 4,
-        client: "Trickybeas",
+        client: "Trickybeas x EAFC",
         featured: false,
         link: "/project/ultimate-team-heroes-campaign",
         title: "Ultimate Team Heroes Campaign",
         image: "/project/ultimate-team-heroes-campaign/gallery/1.jpg",
         description:
-          "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. The inspiration was taken from X-Men to slow everying down around him to prep for the PSV Champion League Match. With less then two weeks time to produce, film and edit. We built out a team comprised of specialized people to execute the vision quickly.",
+          "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. When asked how we could integrate PSV, we tried to bring PSV to him. The inspo was taken from X-Men to slow everything down around him to prep for the PSV Champion League Match, with less than two weeks to produce, film, and edit. We built a team of specialized people to execute the vision quickly while keeping quality high.",
       },
       {
         id: 5,
-        client: "Adidas + MLS",
+        client: "Adidas x MLS",
         featured: false,
         link: "/project/fifa-world-cup-qatar",
         title: "FIFA World Cup Qatar 2022™",
@@ -68,9 +68,9 @@ export default function AboutPage() {
         featured: false,
         link: "/project/leagues-cup",
         title: "Leagues Cup",
-        image: "/project/leagues-cup/gallery/2.jpg",
+        image: "/project/leagues-cup/gallery/11.jpg",
         description:
-          "Going beyond the ask of game capture, we wanted to create a iconic moment that lived forever as something written as history. Devin L'Amoreaux, pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
+          "Going beyond the ask of game capture, we wanted to create an iconic moment that lived forever as something written as history. Devin L'Amoreaux pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
       },
       {
         id: 7,
@@ -80,11 +80,11 @@ export default function AboutPage() {
         title: "Messi Mania",
         image: "/project/messi-mania/gallery/3.jpg",
         description:
-          "Originally a doc that was suppose to be comprised of a few games dwindled to one as it was enough to tell the story in our opinion. We captured argentina fans bowing down to a mural of messi, fans fighting their way into the training center to see messi, to messi winning his first game on a free kick in the closing minute. The script was written for us.",
+          "Initially, a doc that was supposed to comprise a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
       },
       {
         id: 8,
-        client: "2023",
+        client: "Mexican National Team",
         featured: false,
         link: "/project/mextour",
         title: "Mextour",
@@ -108,7 +108,7 @@ export default function AboutPage() {
       <Page.GrayBackground>
         <Wrap>
           <section id="about">
-            <Page.SectionTitle as="h1">Why Us?</Page.SectionTitle>
+            <Page.SectionTitle as="h1">About Us</Page.SectionTitle>
             <Page.About>
               <div>
                 <h3>Setting the standard for soccer storytelling.</h3>
@@ -118,19 +118,19 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Starting Eleven is the leading soccer-specific production
-                  agency in the country. From conception to post-production, we
-                  deliver authentic stories rooted in respect for the sport —
-                  and everyone who loves it. We elevate narratives for athletes,
-                  clubs, leagues, and brands by connecting artist to artist.
+                  agency in the United States. From conception to
+                  post-production, we deliver authentic stories rooted in
+                  respect for the sport — and everyone who loves it. We elevate
+                  narratives for athletes, clubs, leagues, and brands by
+                  connecting artist to artist.
                 </p>
                 <p>
-                  <strong>
-                    Starting Eleven has covered everything from the World Cup to
-                    the cover of EAFC (previously FIFA) to covering every
-                    significant soccer game played in the United States. We are
-                    a bilingual, multicultural team of soccer enthusiasts.
-                  </strong>
+                  Starting Eleven has covered everything from the World Cup and
+                  the cover of EAFC (previously FIFA) to every significant
+                  soccer game played in the United States. We are a bilingual,
+                  multicultural team of soccer enthusiasts.
                 </p>
+                <p>This is our passion, not just another job.</p>
               </div>
 
               <Page.AboutImageContainer />
@@ -190,9 +190,6 @@ export default function AboutPage() {
                   </Page.ProjectTitle>
 
                   <p>
-                    {description}
-                    <br />
-                    <br />
                     <a href={link}>More &rarr;</a>
                   </p>
                 </Page.Project>

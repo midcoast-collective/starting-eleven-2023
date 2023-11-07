@@ -7,9 +7,9 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Ultimate Team Heroes Campaign Trickybeas - Starting Eleven",
+  title: "Ultimate Team Heroes Campaign // Trickybeas x EAFC - Starting Eleven",
   description:
-    "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. The inspiration was taken from X-Men to slow everying down around him to prep for the PSV Champion League Match. With less then two weeks time to produce, film and edit. We built out a team comprised of specialized people to execute the vision quickly.",
+    "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. When asked how we could integrate PSV, we tried to bring PSV to him. The inspo was taken from X-Men to slow everything down around him to prep for the PSV Champion League Match, with less than two weeks to produce, film, and edit. We built a team of specialized people to execute the vision quickly while keeping quality high.",
 };
 
 export default function ProjectPage() {
@@ -36,16 +36,16 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            Ultimate Team Heroes Campaign - Trickybeas
+            Ultimate Team Heroes Campaign // Trickybeas x EAFC
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              To showcase Demarcus Beasly super-speed while integrating his
-              former club PSV into his home in Fort Wayne Indian that solidifies
-              Beasley&apos;s position as a Hero.
+              To showcase Demarcus Beasly&apos;s super-speed while integrating
+              his former club, PSV, into his home in Fort Wayne, Indiana,
+              solidifies Beasley&apos;s position as a Hero.
             </p>
           </Project.ProjectSection>
 
@@ -53,12 +53,12 @@ export default function ProjectPage() {
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
               The wish list from EA was to take Beasly to the Netherlands and
-              bring him to PSV. When asked how we can integrate PSV we tried to
-              bring PSV to him. The inspo was taken from x-men to slow everying
-              down around him to prep for the PSV Champion League Match. With
-              less then two weeks time to produce, film and edit. We built out a
-              team comprised of specialized people to execute the vision
-              quickly.
+              bring him to PSV. When asked how we could integrate PSV, we tried
+              to bring PSV to him. The inspo was taken from X-Men to slow
+              everything down around him to prep for the PSV Champion League
+              Match, with less than two weeks to produce, film, and edit. We
+              built a team of specialized people to execute the vision quickly
+              while keeping quality high.
             </p>
           </Project.ProjectSection>
 
@@ -95,15 +95,15 @@ export default function ProjectPage() {
 
       <Project.QuoteSection>
         <p>
-          We knew our idea was larger then the timeline and budget allowed but
-          with our diversely skilled internal team, we knew what was possible on
-          our end knowing all aspects of production. We found creative ways to
-          bring the supper slow mo look with fast movement.
-          <br />
-          <br />
-          We couldn&apos;t have done it without our amazing crew pre-lighting
-          setups as we had to move scene to scene within 10-15 minutes. Most
-          scenes with quick movements were picked up by a body double.
+          We knew our idea was more significant than the timeline and budget
+          allowed, but with our diversely skilled internal team, we knew what
+          was possible on our end, knowing all aspects of production. We found
+          creative ways to bring the supper slow-mo look with fast movement.
+        </p>
+        <p>
+          We couldn&apos;t have done it without our fantastic crew pre-lighting
+          setups, as we had to move from scene to scene within 10-15 minutes.
+          Most scenes with quick movements were picked up by a body double.
         </p>
       </Project.QuoteSection>
 
@@ -115,18 +115,33 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.&quot;
+          &quot;Working on the EAFC project was an exciting experience. I
+          started with the base edit while collaborating with people
+          specializing in sound, visual effects, and color. With the quick
+          turnaround, our collective contributions resulted in an impressive end
+          product where we integrated our best work to bring the project to
+          life.&quot;
         </p>
         <p className="author">
           - Maria Babcock
           <br />
           Starting Eleven, Video Editor
+        </p>
+      </Project.QuoteSection>
+
+      <Project.QuoteSection>
+        <p>
+          &quot;Coming from a background that has touched every aspect of
+          production. I knew that we could pitch and execute an idea unsuitable
+          for the due dates given to us. There are a few jobs that come through
+          that I can tap into all those parts of my brain and help bring
+          something to fruition. I wouldn&apos;t say I love to do these, but
+          they are an adrenalin rush I enjoy occasionally.&quot;
+        </p>
+        <p className="author">
+          - Casey Wertz
+          <br />
+          Starting Eleven, Partner
         </p>
       </Project.QuoteSection>
     </main>

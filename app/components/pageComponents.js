@@ -108,13 +108,14 @@ export const About = styled.div`
 
 export const AboutImageContainer = styled.div`
   display: flex;
-  background-image: url(/about.png);
+  background-image: url(/logo_full.png);
   grid-column: 2 / 4;
   min-height: 33rem;
   position: relative;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 
   @media (max-width: 800px) {
     min-height: 12rem;

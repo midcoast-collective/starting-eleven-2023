@@ -5,7 +5,8 @@ import ContactForm from "../components/contactForm";
 
 export const metadata = {
   title: "Contact - Starting Eleven",
-  description: "Contact us online or come see us in our Venice or KC location.",
+  description:
+    "Want to tell your soccer story? Contact us online or come see us in our Venice or KC location.",
 };
 
 export default function ContactPage() {
@@ -24,7 +25,7 @@ export default function ContactPage() {
               <a href="mailto:hello@startingeleven.com">
                 hello@startingeleven.com
               </a>
-              ) or fill out this form and we will get back to you ASAP.
+              ) or fill out this form.
             </p>
 
             <ContactForm />

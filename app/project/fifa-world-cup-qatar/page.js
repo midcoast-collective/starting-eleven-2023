@@ -7,7 +7,7 @@ import * as Page from "@/app/components/pageComponents";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "FIFA World Cup Qatar 2022 - Starting Eleven",
+  title: "FIFA World Cup Qatar 2022 // Adidas - Starting Eleven",
   description:
     "This was Devin's first time photographing at a World Cup. He used his relationships, connections and observational skills to soak in all the information he could upon his arrival. Looking for opportunities where he could excel at the tournament and have his photos stand out from the hundreds of other photographers there.",
 };
@@ -36,15 +36,15 @@ export default function ProjectPage() {
       <Project.ContentSection>
         <Wrap>
           <Project.ProjectTitle>
-            FIFA World Cup Qatar 2022™
+            FIFA World Cup Qatar 2022™ // Adidas
           </Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Photograph the FIFA World Cup 2022 in Qatar for adidas&apos; and
-              MLS&apos; social campaigns
+              Photograph the FIFA World Cup 2022 in Qatar for Adidas&apos; and
+              Major League Soccer social campaign
             </p>
           </Project.ProjectSection>
 
@@ -52,22 +52,23 @@ export default function ProjectPage() {
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
               This was Devin&apos;s first time photographing at a World Cup. He
-              used his relationships, connections and observational skills to
-              soak in all the information he could upon his arrival. Looking for
-              opportunities where he could excel at the tournament and have his
+              used his relationships, connections, and observational skills to
+              soak in all the information he could upon his arrival. He was
+              looking for opportunities to excel at the tournament and have his
               photos stand out from the hundreds of other photographers there.
-              <br />
-              Within three games adidas football reached out to him requesting
-              his services and hired him out for the rest of the tournament.
-              This came will more responsibilities and more pressure to deliver
-              exceptional images and in very quick turn around as adidas wanted
-              to post photos about the game on their social channels seconds
-              after the final whistle. With no help on the editing or ingestion
-              of his photos, Devin would capture the images, edit and upload
-              selects all while the game was happening. This is something that
-              we provide for a lot of our clients and believe that this is a
-              major factor of why we are the best in the game. We deliver the
-              highest quality, with the fastest turnaround.
+            </p>
+            <p>
+              Within three games, Adidas football contacted him requesting his
+              services and hired him out for the rest of the tournament. This
+              came with more responsibilities and pressure to deliver
+              exceptional images with a fast turnaround. Adidas wanted to post
+              photos about the game on their social channels seconds after the
+              final whistle. With no help on the editing or ingestion of his
+              photographs, Devin would capture the images, edit, and upload
+              selects, all while the game was happening. This is something that
+              we provide for a lot of our clients, and this is a significant
+              factor in why we are the best in the game. We deliver the highest
+              quality with the fastest turnaround.
             </p>
           </Project.ProjectSection>
 
@@ -83,16 +84,16 @@ export default function ProjectPage() {
       <Project.QuoteSection>
         <p>
           &quot;I went into this World Cup fired up. I told myself I needed to
-          treat the tournament as if I was representing my country and my own
+          treat the tournament as if I was representing my country and my
           legacy. I arrived in Doha working myself up, telling myself that this
-          is where I prove that I&apos;m the best soccer photographer in the
+          is where I would prove I&apos;m the best soccer photographer in the
           world. What better stage? Photographers from all around the world all
-          shooting the same thing. We were areound the pitches like sardines.
-          Photographers were elbowing eachother and jockeying for ever inch of
-          space just for the fraction of an advantage to get a better photo that
-          the others. And I did it. I think I really did it. I put my name on
-          the map internationally, and developed a great client relationship
-          with the crew at adidas football.&auote;
+          shoot the same thing. We were around the pitches like sardines.
+          Photographers were elbowing each other and jockeying for every inch of
+          space just for a fraction of an advantage to get a better photo than
+          the others. And I did it. I did it. I put my name on the map
+          internationally and developed a great client relationship with the
+          crew at Adidas football.&auote;
         </p>
         <p className="author">
           - Devin L&apos;Amoreaux
@@ -109,11 +110,10 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;I tell most people that I went in to the World Cup with no
-          expectations because that&apos;s an easy conversation to have. In
-          reality, I went in with the goal to come out as the best photographer
-          I could be; making the most of the opportunity, and again, I think I
-          did that.&quot;
+          &quot;I tell most people I went into the World Cup without
+          expectations because that&apos;s an easy conversation. In reality, I
+          intended to come out as the best photographer I could be, making the
+          most of the opportunity, and again, I did that.&quot;
         </p>
         <p className="author">
           - Devin L&apos;Amoreaux

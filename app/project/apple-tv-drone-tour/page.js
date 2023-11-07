@@ -7,9 +7,9 @@ import Episodes from "@/app/components/episodes";
 import * as Project from "@/app/components/project";
 
 export const metadata = {
-  title: "Drone Tour  TV - Starting Eleven",
+  title: "Drone Tour //  TV - Starting Eleven",
   description:
-    "Combine cinematic high resolution drone footage with dynamic FPV to tell the story of each club. Over the course of 3 years, we've expanded on the series to include a live game and local celebrity host to help tell authentic story for each club.",
+    "Combine cinematic high-resolution drone footage with dynamic FPV to tell the story of each club. For three years, we've expanded the series to include a live game and a local celebrity host to help tell authentic stories for each club.",
 };
 
 export default function ProjectPage() {
@@ -89,7 +89,7 @@ export default function ProjectPage() {
       },
       {
         image: "/project/apple-tv-drone-tour/episodes/13.png",
-        link: "https://tv.apple.com/us/episode/shell-energy-stadium/umc.cmc.53ofv8kt3uyw9dlv87h5um9ps?showId=umc.cmc.3ljun457gwwjo9unbgc12o38f",
+        link: "https://tv.apple.com/us/episode/audi-field/umc.cmc.erttmwb9a9vdpbzgsubsfn0x?showId=umc.cmc.3ljun457gwwjo9unbgc12o38f",
         title: "Audi Field",
         subtitle: "Episode 13",
       },
@@ -106,6 +106,17 @@ export default function ProjectPage() {
       "/project/apple-tv-drone-tour/gallery/5.jpg",
       "/project/apple-tv-drone-tour/gallery/6.jpg",
       "/project/apple-tv-drone-tour/gallery/7.jpg",
+      "/project/apple-tv-drone-tour/gallery/8.jpg",
+      "/project/apple-tv-drone-tour/gallery/9.jpg",
+      "/project/apple-tv-drone-tour/gallery/10.jpg",
+      "/project/apple-tv-drone-tour/gallery/11.jpg",
+      "/project/apple-tv-drone-tour/gallery/12.jpg",
+      "/project/apple-tv-drone-tour/gallery/13.jpg",
+      "/project/apple-tv-drone-tour/gallery/14.jpg",
+      "/project/apple-tv-drone-tour/gallery/15.jpg",
+      "/project/apple-tv-drone-tour/gallery/16.jpg",
+      "/project/apple-tv-drone-tour/gallery/17.jpg",
+      "/project/apple-tv-drone-tour/gallery/18.jpg",
     ],
     []
   );
@@ -119,13 +130,13 @@ export default function ProjectPage() {
 
       <Project.ContentSection>
         <Wrap>
-          <Project.ProjectTitle>Drone Tour -  TV</Project.ProjectTitle>
+          <Project.ProjectTitle>Drone Tour //  TV</Project.ProjectTitle>
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>
               Project Scope
             </Project.ProjectSectionTitle>
             <p>
-              Showcase soccer specific stadiums within MLS and historical
+              Showcase soccer-specific stadiums within MLS and the historical
               aspects of each club.
             </p>
           </Project.ProjectSection>
@@ -133,10 +144,10 @@ export default function ProjectPage() {
           <Project.ProjectSection>
             <Project.ProjectSectionTitle>Approach</Project.ProjectSectionTitle>
             <p>
-              Combine cinematic high resolution drone footage with dynamic FPV
-              to tell the story of each club. Over the course of 3 years,
-              we&apos;ve expanded on the series to include a live game and local
-              celebrity host to help tell authentic story for each club.
+              Combine cinematic high-resolution drone footage with dynamic FPV
+              to tell the story of each club. For three years, we&apos;ve
+              expanded the series to include a live game and a local celebrity
+              host to help tell authentic stories for each club.
             </p>
           </Project.ProjectSection>
 
@@ -149,7 +160,7 @@ export default function ProjectPage() {
               <br />
               Drone pilot/FPV: Bryson Wooden
               <br />
-              Camera: Jason Cadena Maria Babcock Keith Dixon Luis Villeral
+              Camera: Jason Cadena, Maria Babcock, Keith Dixon, Luis Villeral,
               Nelson Chavez
               <br />
               Editor: Maria Babcock
@@ -173,13 +184,14 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.&quot;
+          &quot;In the past year, I had the opportunity to edit numerous MLS
+          drone tours, which have become some of my favorite projects. I&apos;ve
+          enjoyed working with drone footage, and the addition of FPV takes the
+          experience to the next level. Combining this with the most memorable
+          moments from the club&apos;s history is an enjoyable creative process.
+          These tours offer viewers a unique perspective of their MLS team.
+          It&apos;s exciting to witness these projects come to life on Apple
+          TV.&quot;
         </p>
         <p className="author">
           - Maria Babcock
