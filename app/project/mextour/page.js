@@ -33,7 +33,7 @@ export default function ProjectPage() {
     <main>
       <ResponsivePlayer
         desktop="https://vimeo.com/879446806"
-        mobile="https://vimeo.com/879446806"
+        mobile="https://vimeo.com/881790641"
       />
 
       <Project.ContentSection>
@@ -86,7 +86,7 @@ export default function ProjectPage() {
 
         <ResponsivePlayer
           desktop="https://vimeo.com/880027068"
-          mobile="https://vimeo.com/880027068"
+          mobile="https://vimeo.com/881790820"
         />
       </Project.ContentSection>
 
