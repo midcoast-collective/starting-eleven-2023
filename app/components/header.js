@@ -45,7 +45,7 @@ export default function HeaderComponent() {
 
   return (
     <Header>
-      {!isHomePage ? <InstagramBanner /> : null}
+      <InstagramBanner />
 
       <HeaderWrap>
         {isHomePage ? <h1 className="sr-only">Starting Eleven</h1> : null}
