@@ -16,43 +16,43 @@ export default function ProjectPage() {
   const episodes = useMemo(
     () => [
       {
-        image: "/project/apple-tv-breakaway/episodes/episode1.png",
+        image: "/project/apple-tv-breakaway/episodes/1.png",
         link: "https://tv.apple.com/us/episode/paul-arriola/umc.cmc.3l8fphf61qe2dw5r74tnbwo85?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Paul Arriola",
         subtitle: "Episode 1",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode2.png",
+        image: "/project/apple-tv-breakaway/episodes/2.png",
         link: "https://tv.apple.com/us/episode/cade-cowell/umc.cmc.367cndfhcyqhuslehovrt58y3?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Cade Cowell",
         subtitle: "Episode 2",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode3.png",
+        image: "/project/apple-tv-breakaway/episodes/3.png",
         link: "https://tv.apple.com/us/episode/alan-pulido/umc.cmc.71zwtcfbjhisyx92yzw0slq6?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Alan Pulido",
         subtitle: "Episode 3",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode4.png",
+        image: "/project/apple-tv-breakaway/episodes/4.png",
         link: "https://tv.apple.com/us/episode/josef-martinez/umc.cmc.5po8uqi96xpsridzqenzyjp34?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Josef Martinez",
         subtitle: "Episode 4",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode5.png",
+        image: "/project/apple-tv-breakaway/episodes/5.png",
         link: "https://tv.apple.com/us/episode/mateusz-klich/umc.cmc.26p1ubihp6w7cmm2it64mx2wm?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Mateusz Klich",
         subtitle: "Episode 5",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode6.png",
+        image: "/project/apple-tv-breakaway/episodes/6.png",
         link: "https://tv.apple.com/us/episode/chicho-arango/umc.cmc.7fktx04a6aaqf4xqn6hq7o49h?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "Chicho Arango",
         subtitle: "Episode 6",
       },
       {
-        image: "/project/apple-tv-breakaway/episodes/episode7.png",
+        image: "/project/apple-tv-breakaway/episodes/7.png",
         link: "https://tv.apple.com/us/episode/john-tolkin/umc.cmc.1gb88vore8r8mx7mapj9v01sy?showId=umc.cmc.183ozzhvpkijmzgaa6irat6x5",
         title: "John Tolkin",
         subtitle: "Episode 7",
