@@ -19,6 +19,8 @@ const StyledLink = styled.a`
   font-weight: 600;
   font-size: var(--font-size-strong);
 
+  text-transform: uppercase;
+
   &.icon {
     margin: 0 0.5rem;
   }
@@ -34,7 +36,9 @@ export default function NavComponent() {
   return (
     <Nav>
       <StyledLink href="/#about">About</StyledLink>
+      <span>{"//"}</span>
       <StyledLink href="/#projects">Projects</StyledLink>
+      <span>{"//"}</span>
       <StyledLink className="last" href="/contact">
         Contact
       </StyledLink>
