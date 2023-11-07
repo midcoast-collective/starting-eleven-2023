@@ -91,7 +91,7 @@ export default function ProjectPage() {
   return (
     <main>
       <ResponsivePlayer
-        desktop="https://vimeo.com/880027959"
+        desktop="https://vimeo.com/882193208"
         mobile="https://vimeo.com/882207054"
       />
 
