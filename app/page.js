@@ -48,7 +48,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/ultimate-team-heroes-campaign",
         title: "Ultimate Team Heroes Campaign",
-        image: "/project/ultimate-team-heroes-campaign/gallery/1.jpg",
+        image: "/project/ultimate-team-heroes-campaign/cover.png",
         description:
           "The wish list from EA was to take Beasly to the Netherlands and bring him to PSV. When asked how we could integrate PSV, we tried to bring PSV to him. The inspo was taken from X-Men to slow everything down around him to prep for the PSV Champion League Match, with less than two weeks to produce, film, and edit. We built a team of specialized people to execute the vision quickly while keeping quality high.",
       },
