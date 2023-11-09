@@ -71,7 +71,7 @@ export default function ProjectPage() {
               <br />
               Production Desinger: Casey Wertz
               <br />
-              1st AD: Luis Villareal
+              1st AD: Luis Villarreal
               <br />
               AC: Jason Cadena
               <br />
@@ -115,7 +115,7 @@ export default function ProjectPage() {
           moments like these that make our work truly rewarding.&quot;
         </p>
         <p className="author">
-          - Luis Villareal
+          - Luis Villarreal
           <br />
           Starting Eleven, Video Editor
         </p>

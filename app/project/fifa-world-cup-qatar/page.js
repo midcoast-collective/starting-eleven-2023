@@ -93,7 +93,7 @@ export default function ProjectPage() {
           space just for a fraction of an advantage to get a better photo than
           the others. And I did it. I did it. I put my name on the map
           internationally and developed a great client relationship with the
-          crew at Adidas football.&auote;
+          crew at Adidas football.&quot;
         </p>
         <p className="author">
           - Devin L&apos;Amoreaux

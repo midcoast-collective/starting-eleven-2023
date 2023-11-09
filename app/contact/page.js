@@ -12,29 +12,8 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <section>
-        <Page.Placeholder $image="/stadium-gameday.png" />
-      </section>
-
-      <Page.GrayBackground>
+      <section style={{ paddingTop: "3rem" }}>
         <Wrap>
-          <section>
-            <Contact.Title>Contact</Contact.Title>
-            <p>
-              Want to tell your soccer story? Reach out via email (
-              <a href="mailto:hello@startingeleven.com">
-                hello@startingeleven.com
-              </a>
-              ) or fill out this form.
-            </p>
-
-            <ContactForm />
-          </section>
-        </Wrap>
-      </Page.GrayBackground>
-
-      <Wrap>
-        <section id="projects">
           <Page.SectionTitle>Locations</Page.SectionTitle>
 
           <Contact.Locations>
@@ -68,8 +47,22 @@ export default function ContactPage() {
               </p>
             </div>
           </Contact.Locations>
-        </section>
-      </Wrap>
+        </Wrap>
+      </section>
+
+      <Page.GrayBackground style={{ marginBottom: 0 }}>
+        <Wrap>
+          <section>
+            <Contact.Title>Contact</Contact.Title>
+            <p>
+              Reach out via email (hello@startingeleven.com) or fill out this
+              form.
+            </p>
+
+            <ContactForm />
+          </section>
+        </Wrap>
+      </Page.GrayBackground>
     </main>
   );
 }

@@ -80,7 +80,7 @@ export default function AboutPage() {
         title: "Messi Mania",
         image: "/project/messi-mania/gallery/3.jpg",
         description:
-          "Initially, a doc that was supposed to comprise a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
+          "Initially, a doc that was supposed to comprise of a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
       },
       {
         id: 8,

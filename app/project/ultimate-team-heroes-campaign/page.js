@@ -136,7 +136,7 @@ export default function ProjectPage() {
           for the due dates given to us. There are a few jobs that come through
           that I can tap into all those parts of my brain and help bring
           something to fruition. I wouldn&apos;t say I love to do these, but
-          they are an adrenalin rush I enjoy occasionally.&quot;
+          they are an adrenaline rush I enjoy occasionally.&quot;
         </p>
         <p className="author">
           - Casey Wertz

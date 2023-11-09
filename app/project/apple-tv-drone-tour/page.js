@@ -162,7 +162,7 @@ export default function ProjectPage() {
               <br />
               Drone pilot/FPV: Bryson Wooden
               <br />
-              Camera: Jason Cadena, Maria Babcock, Keith Dixon, Luis Villeral,
+              Camera: Jason Cadena, Maria Babcock, Keith Dixon, Luis Villarreal,
               Nelson Chavez
               <br />
               Editor: Maria Babcock

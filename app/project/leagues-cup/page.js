@@ -38,7 +38,7 @@ export default function ProjectPage() {
     <main>
       <ResponsivePlayer
         desktop="https://vimeo.com/878895972"
-        mobile="https://vimeo.com/878895972"
+        mobile="https://vimeo.com/882555181"
       />
 
       <Project.ContentSection>
@@ -85,7 +85,7 @@ export default function ProjectPage() {
               <br />
               Lead Photographer: Devin L&apos;Amoreaux
               <br />
-              Video Coverage team: Jason Cadena, Luis Villareal, Nelson Chavez,
+              Video Coverage team: Jason Cadena, Luis Villarreal, Nelson Chavez,
               Nick Brown, Hanin Atighi, Lauren Terry, Jordan Borel, Julian
               Bright, Rodolfo Chona, Keith Dixon
             </p>

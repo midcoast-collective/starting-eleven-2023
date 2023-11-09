@@ -9,7 +9,7 @@ import * as Project from "@/app/components/project";
 export const metadata = {
   title: "Messi Mania //  TV - Starting Eleven",
   description:
-    "Initially, a doc that was supposed to comprise a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
+    "Initially, a doc that was supposed to comprise of a few games dwindled to one as it was enough to tell the story. We captured Argentina fans bowing down to a mural of Messi, fans fighting their way into the training center to see Messi, and Messi winning his first game on a free kick in the closing minute. The script was written for us.",
 };
 
 export default function ProjectPage() {
@@ -115,8 +115,8 @@ export default function ProjectPage() {
 
       <Project.QuoteSection>
         <p>
-          Initially, a doc that was supposed to comprise a few games dwindled to
-          one as it was enough to tell the story. We captured Argentina fans
+          Initially, a doc that was supposed to comprise of a few games dwindled
+          to one as it was enough to tell the story. We captured Argentina fans
           bowing down to a mural of Messi, fans fighting their way into the
           training center to see Messi, and Messi winning his first game on a
           free kick in the closing minute. The script was written for us.
@@ -131,13 +131,15 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.&quot;
+          &quot;The team at starting 11 did a great job with storytelling. They
+          laid out the emotion nicely and weren&apos;t afraid to show a full
+          range of emotion, which set me up to score the film. I wanted to press
+          into the nervous energy the fans felt with the weather and all the
+          unknowns circulating in Miami. Seeing the footage of the stadium
+          erupting once Messi&apos;s name was called helped me find a theme of
+          triumph I could use to send the view directly into the stadium with
+          the thousands of other fans. Messi mania was a blast to work on and an
+          opportunity I&apos;ll be forever grateful for!&quot;
         </p>
         <p className="author">
           - Zane Callister
