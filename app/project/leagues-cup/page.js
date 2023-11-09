@@ -81,7 +81,8 @@ export default function ProjectPage() {
               <br />
               Animation: Ben Makovsky and Maria Babcock
               <br />
-              Editors: Chris Burrow, Jason Cadena, Luis Villarreal, Stoney Yoos
+              Editors: Chris Burrow, Jason Cadena, Luis Villarreal, Stoney Yoos,
+              Maria Babcock
               <br />
               Lead Photographer: Devin L&apos;Amoreaux
               <br />
