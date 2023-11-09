@@ -55,7 +55,7 @@ export const Projects = styled.div`
 export const Project = styled.div`
   min-width: 0;
 
-  a:hover {
+  p > a:hover {
     padding-left: 0.25rem;
   }
 
@@ -67,10 +67,22 @@ export const Project = styled.div`
 export const ProjectImageContainer = styled.a`
   display: block;
   height: 12rem;
-  position: relative;
-  background-color: var(--color-gray);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+
+  div {
+    background-color: var(--color-gray);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transition: all 300ms;
+  }
+
+  &:hover {
+    div {
+      scale: 1.1;
+    }
+  }
 
   @media (max-width: 800px) {
     margin-top: 1.5rem;
@@ -138,9 +150,22 @@ export const SpecialImageContainer = styled.a`
   min-height: 33rem;
   position: relative;
   width: 100%;
-  background-color: var(--color-gray);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+
+  div {
+    background-color: var(--color-gray);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transition: all 300ms;
+  }
+
+  &:hover {
+    div {
+      scale: 1.1;
+    }
+  }
 
   @media (max-width: 800px) {
     min-height: 12rem;

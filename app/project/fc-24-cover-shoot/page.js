@@ -21,6 +21,10 @@ export default function ProjectPage() {
       "/project/fc-24-cover-shoot/gallery/2.jpg",
       "/project/fc-24-cover-shoot/gallery/3.jpg",
       "/project/fc-24-cover-shoot/gallery/4.jpg",
+      "/project/fc-24-cover-shoot/gallery/5.jpg",
+      "/project/fc-24-cover-shoot/gallery/6.jpg",
+      "/project/fc-24-cover-shoot/gallery/7.jpg",
+      "/project/fc-24-cover-shoot/gallery/8.jpg",
     ],
     []
   );

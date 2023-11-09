@@ -131,11 +131,11 @@ export default function ProjectPage() {
 
       <Project.QuoteSection style={{ paddingTop: "6rem" }}>
         <p>
-          &quot;The team at starting 11 did a great job with storytelling. They
-          laid out the emotion nicely and weren&apos;t afraid to show a full
-          range of emotion, which set me up to score the film. I wanted to press
-          into the nervous energy the fans felt with the weather and all the
-          unknowns circulating in Miami. Seeing the footage of the stadium
+          &quot;The team at Starting Eleven did a great job with storytelling.
+          They laid out the emotion nicely and weren&apos;t afraid to show a
+          full range of emotion, which set me up to score the film. I wanted to
+          press into the nervous energy the fans felt with the weather and all
+          the unknowns circulating in Miami. Seeing the footage of the stadium
           erupting once Messi&apos;s name was called helped me find a theme of
           triumph I could use to send the view directly into the stadium with
           the thousands of other fans. Messi mania was a blast to work on and an

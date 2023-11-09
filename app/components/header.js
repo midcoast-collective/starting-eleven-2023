@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import styled from "styled-components";
 
 import Nav from "@/app/components/nav";
-import InstagramBanner from "@/app/components/instagramBanner";
+import StandardBanner from "@/app/components/standardBanner";
 
 const Header = styled.header`
   border-bottom: 1px solid var(--color-black);

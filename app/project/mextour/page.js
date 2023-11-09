@@ -25,6 +25,7 @@ export default function ProjectPage() {
       "/project/mextour/gallery/6.jpg",
       "/project/mextour/gallery/7.jpg",
       "/project/mextour/gallery/8.jpg",
+      "/project/mextour/gallery/9.jpg",
     ],
     []
   );

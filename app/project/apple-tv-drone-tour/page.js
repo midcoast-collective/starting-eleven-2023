@@ -112,11 +112,6 @@ export default function ProjectPage() {
       "/project/apple-tv-drone-tour/gallery/11.jpg",
       "/project/apple-tv-drone-tour/gallery/12.jpg",
       "/project/apple-tv-drone-tour/gallery/13.jpg",
-      "/project/apple-tv-drone-tour/gallery/14.jpg",
-      "/project/apple-tv-drone-tour/gallery/15.jpg",
-      "/project/apple-tv-drone-tour/gallery/16.jpg",
-      "/project/apple-tv-drone-tour/gallery/17.jpg",
-      "/project/apple-tv-drone-tour/gallery/18.jpg",
     ],
     []
   );

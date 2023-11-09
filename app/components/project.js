@@ -65,4 +65,9 @@ export const QuoteSection = styled.section`
   p.author {
     text-align: right;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 `;

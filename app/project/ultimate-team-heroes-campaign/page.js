@@ -22,6 +22,8 @@ export default function ProjectPage() {
       "/project/ultimate-team-heroes-campaign/gallery/3.jpg",
       "/project/ultimate-team-heroes-campaign/gallery/4.jpg",
       "/project/ultimate-team-heroes-campaign/gallery/5.jpg",
+      "/project/ultimate-team-heroes-campaign/gallery/6.jpg",
+      "/project/ultimate-team-heroes-campaign/gallery/7.jpg",
     ],
     []
   );

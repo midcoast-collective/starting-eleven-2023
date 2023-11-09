@@ -17,7 +17,7 @@ export default function AboutPage() {
         client: "MLS x  TV",
         featured: true,
         title: "Breakaway",
-        image: "/project/apple-tv-breakaway/gallery/10.jpg",
+        image: "/project/apple-tv-breakaway/gallery/3.jpg",
         link: "/project/apple-tv-breakaway",
         description:
           "This project is a big undertaking for us, balancing a player's time and achieving high quality through the camera and story. Sometimes, the equation doesn't favor us, but that is what makes us the best at what we do. We know how to be in the player's shoes and bring the best out of them.",
@@ -58,7 +58,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/fifa-world-cup-qatar",
         title: "FIFA World Cup Qatar 2022™",
-        image: "/project/fifa-world-cup-qatar/gallery/8.jpg",
+        image: "/project/fifa-world-cup-qatar/gallery/cover.jpg",
         description:
           "This was Devin's first time photographing at a World Cup. He used his relationships, connections and observational skills to soak in all the information he could upon his arrival. Looking for opportunities where he could excel at the tournament and have his photos stand out from the hundreds of other photographers there.",
       },
@@ -68,7 +68,7 @@ export default function AboutPage() {
         featured: false,
         link: "/project/leagues-cup",
         title: "Leagues Cup",
-        image: "/project/leagues-cup/gallery/11.jpg",
+        image: "/project/leagues-cup/gallery/9.jpg",
         description:
           "Going beyond the ask of game capture, we wanted to create an iconic moment that lived forever as something written as history. Devin L'Amoreaux pitched the idea of a trophy room moment with the legendary Inter Miami team. Something we pride ourselves in is going the extra mile to achieve greatness.",
       },
@@ -147,12 +147,9 @@ export default function AboutPage() {
             .filter((project) => project.featured)
             .map(({ client, description, link, image, title }) => (
               <Page.Special key={title}>
-                <Page.SpecialImageContainer
-                  href={link}
-                  style={{
-                    backgroundImage: `url(${image})`,
-                  }}
-                ></Page.SpecialImageContainer>
+                <Page.SpecialImageContainer href={link}>
+                  <div style={{ backgroundImage: `url(${image})` }}></div>
+                </Page.SpecialImageContainer>
 
                 <Page.Project>
                   <Page.FeaturedProjectTitle>
@@ -176,12 +173,11 @@ export default function AboutPage() {
           <Page.Projects>
             {projects
               .filter((project) => !project.featured)
-              .map(({ client, description, link, image, title }) => (
+              .map(({ client, link, image, title }) => (
                 <Page.Project key={title}>
-                  <Page.ProjectImageContainer
-                    href={link}
-                    style={{ backgroundImage: `url(${image})` }}
-                  ></Page.ProjectImageContainer>
+                  <Page.ProjectImageContainer href={link}>
+                    <div style={{ backgroundImage: `url(${image})` }}></div>
+                  </Page.ProjectImageContainer>
 
                   <Page.ProjectTitle>
                     {title}

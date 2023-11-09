@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useMemo } from "react";
 
 import ResponsivePlayer from "@/app/components/responsivePlayer";
@@ -25,11 +26,6 @@ export default function ProjectPage() {
       "/project/leagues-cup/gallery/6.jpg",
       "/project/leagues-cup/gallery/7.jpg",
       "/project/leagues-cup/gallery/8.jpg",
-      "/project/leagues-cup/gallery/9.jpg",
-      "/project/leagues-cup/gallery/10.jpg",
-      "/project/leagues-cup/gallery/11.jpg",
-      "/project/leagues-cup/gallery/12.jpg",
-      "/project/leagues-cup/gallery/13.jpg",
     ],
     []
   );
@@ -95,6 +91,10 @@ export default function ProjectPage() {
           {episodes.length > 0 ? <Episodes data={episodes} /> : null}
         </Wrap>
       </Project.ContentSection>
+
+      <Project.QuoteSection>
+        <img src="/project/leagues-cup/gallery/9.jpg" alt="" />
+      </Project.QuoteSection>
 
       <Project.QuoteSection>
         <p>

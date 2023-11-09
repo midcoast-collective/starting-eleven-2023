@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Nav from "@/app/components/nav";
 import Wrap from "@/app/components/wrap";
-import InstagramBanner from "@/app/components/instagramBanner";
+import StandardBanner from "@/app/components/standardBanner";
 
 const Footer = styled.div`
   background-color: white;
@@ -27,14 +27,11 @@ export default function FooterComponent() {
 
   return (
     <footer>
-      <InstagramBanner />
+      <StandardBanner />
 
       <Wrap>
         <Footer>
           <div>
-            <p style={{ marginBottom: 0 }}>
-              <strong>Setting the standard for soccer storytelling.</strong>
-            </p>
             <p style={{ marginBottom: 0 }}>
               <small>
                 &copy;{date.getFullYear()} Starting Eleven. All rights reserved.
@@ -42,7 +39,7 @@ export default function FooterComponent() {
             </p>
           </div>
           <div>
-            <Nav />
+            <Nav showSocials />
           </div>
         </Footer>
       </Wrap>
