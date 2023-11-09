@@ -75,15 +75,6 @@ export default function ProjectPage() {
       "/project/apple-tv-breakaway/gallery/10.jpg",
       "/project/apple-tv-breakaway/gallery/11.jpg",
       "/project/apple-tv-breakaway/gallery/12.jpg",
-      "/project/apple-tv-breakaway/gallery/13.jpg",
-      "/project/apple-tv-breakaway/gallery/14.jpg",
-      "/project/apple-tv-breakaway/gallery/15.jpg",
-      "/project/apple-tv-breakaway/gallery/16.jpg",
-      "/project/apple-tv-breakaway/gallery/17.jpg",
-      "/project/apple-tv-breakaway/gallery/18.jpg",
-      "/project/apple-tv-breakaway/gallery/19.jpg",
-      "/project/apple-tv-breakaway/gallery/20.jpg",
-      "/project/apple-tv-breakaway/gallery/21.jpg",
     ],
     []
   );

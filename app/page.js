@@ -17,7 +17,7 @@ export default function AboutPage() {
         client: "MLS x  TV",
         featured: true,
         title: "Breakaway",
-        image: "/project/apple-tv-breakaway/gallery/21.jpg",
+        image: "/project/apple-tv-breakaway/gallery/10.jpg",
         link: "/project/apple-tv-breakaway",
         description:
           "This project is a big undertaking for us, balancing a player's time and achieving high quality through the camera and story. Sometimes, the equation doesn't favor us, but that is what makes us the best at what we do. We know how to be in the player's shoes and bring the best out of them.",

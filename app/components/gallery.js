@@ -23,23 +23,13 @@ export const Gallery = styled.section`
 
   .swiper-slide {
     background-color: var(--color-gray);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 42rem;
-
-    @media (max-width: 800px) {
-      height: 12rem;
-    }
+    height: 100%;
   }
 
   .swiper-slide img {
-    object-fit: cover;
     user-select: none;
-    min-height: 100%;
-    min-width: 100%;
+    height: auto;
+    width: 100%;
   }
 `;
 
