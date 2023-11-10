@@ -22,7 +22,7 @@ export const Scroll = styled.div`
 
   left: 50%;
   right: auto;
-  bottom: 3rem; // Overwritten is JSX
+  bottom: 3rem;
   transform: translateX(-50%);
   transition: opacity 1000ms;
   z-index: 1;
@@ -36,6 +36,10 @@ export const Scroll = styled.div`
     fill: var(--color-white);
     width: 4rem;
     height: 4rem;
+  }
+
+  @media (max-width: 800px) {
+    bottom: 1.5rem;
   }
 `;
 
