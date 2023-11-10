@@ -22,7 +22,7 @@ export const Scroll = styled.div`
 
   left: 50%;
   right: auto;
-  bottom: 3rem;
+  bottom: 3rem; // Overwritten is JSX
   transform: translateX(-50%);
   transition: opacity 1000ms;
   z-index: 1;
@@ -65,10 +65,21 @@ const ResponsivePlayer = ({
   const [ready, setReady] = useState(false);
 
   const scrollRef = useRef();
+  const wrapperRef = useRef();
 
   useEffect(() => {
+    const wrapperRect = wrapperRef.current.getBoundingClientRect();
+
+    console.log({
+      wrapperBottom: wrapperRect.bottom,
+      windowHeight: window.innerHeight,
+    });
+
     function addScrollIcon() {
-      if (!scrollRef.current.classList.contains("visible")) {
+      if (
+        !scrollRef.current.classList.contains("visible") &&
+        wrapperRect.bottom > window.innerHeight // Height at which arrow is needed
+      ) {
         scrollRef.current.classList.add("visible");
       }
     }
@@ -93,7 +104,7 @@ const ResponsivePlayer = ({
     }
 
     return () => window.removeEventListener("scroll", listenToScroll);
-  }, [scrollRef, ready]);
+  }, [scrollRef, ready, wrapperRef]);
 
   useEffect(() => {
     function setVideoSource() {
@@ -112,7 +123,7 @@ const ResponsivePlayer = ({
   }, [desktop, mobile]);
 
   return (
-    <PlayerWrapper $ready={ready} style={style}>
+    <PlayerWrapper $ready={ready} style={style} ref={wrapperRef}>
       <ReactPlayer
         controls={controls}
         height="100%"
