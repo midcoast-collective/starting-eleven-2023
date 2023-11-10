@@ -34,10 +34,10 @@ export const Gallery = styled.section`
 `;
 
 const PrevArrow = styled.div`
-  padding: 8rem 1.75rem;
+  padding: 6rem 1.75rem;
   visibility: ${({ $visible }) => ($visible ? "visible" : "hidden")};
   position: absolute;
-  top: calc(50% - 8.5rem);
+  top: calc(50% - 6.5rem);
   left: 0;
   z-index: 2;
   cursor: pointer;
