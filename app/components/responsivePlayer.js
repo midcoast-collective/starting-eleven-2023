@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 
@@ -22,7 +22,7 @@ export const Scroll = styled.div`
 
   left: 50%;
   right: auto;
-  top: 1rem;
+  bottom: 3rem;
   transform: translateX(-50%);
   transition: opacity 1000ms;
   z-index: 1;
@@ -36,6 +36,10 @@ export const Scroll = styled.div`
     fill: var(--color-white);
     width: 4rem;
     height: 4rem;
+  }
+
+  @media (max-width: 800px) {
+    bottom: 1.5rem;
   }
 `;
 
@@ -64,15 +68,47 @@ const ResponsivePlayer = ({
   const [source, setSource] = useState();
   const [ready, setReady] = useState(false);
 
-  // const scrollRef = useRef();
+  const scrollRef = useRef();
+  const wrapperRef = useRef();
 
-  // useEffect(() => {
-  //   const scrollTimer = setTimeout(() => {
-  //     scrollRef.current.classList.add("visible");
-  //   }, 3000);
+  useEffect(() => {
+    const wrapperRect = wrapperRef.current.getBoundingClientRect();
 
-  //   return () => clearTimeout(scrollTimer);
-  // }, [scrollRef]);
+    console.log({
+      wrapperBottom: wrapperRect.bottom,
+      windowHeight: window.innerHeight,
+    });
+
+    function addScrollIcon() {
+      if (
+        !scrollRef.current.classList.contains("visible") &&
+        wrapperRect.bottom > window.innerHeight // Height at which arrow is needed
+      ) {
+        scrollRef.current.classList.add("visible");
+      }
+    }
+
+    function removeScrollIcon() {
+      if (scrollRef.current.classList.contains("visible")) {
+        scrollRef.current.classList.remove("visible");
+      }
+    }
+
+    function listenToScroll() {
+      if (window.scrollY > 80) {
+        removeScrollIcon();
+      } else {
+        addScrollIcon();
+      }
+    }
+
+    if (ready) {
+      addScrollIcon();
+      window.addEventListener("scroll", listenToScroll);
+    }
+
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, [scrollRef, ready, wrapperRef]);
 
   useEffect(() => {
     function setVideoSource() {
@@ -91,7 +127,7 @@ const ResponsivePlayer = ({
   }, [desktop, mobile]);
 
   return (
-    <PlayerWrapper $ready={ready} style={style}>
+    <PlayerWrapper $ready={ready} style={style} ref={wrapperRef}>
       <ReactPlayer
         controls={controls}
         height="100%"
@@ -110,9 +146,9 @@ const ResponsivePlayer = ({
         width="100%"
       />
 
-      {/* <Scroll ref={scrollRef}>
+      <Scroll ref={scrollRef}>
         <ScrollSVG />
-      </Scroll> */}
+      </Scroll>
     </PlayerWrapper>
   );
 };
