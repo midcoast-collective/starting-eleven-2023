@@ -46,7 +46,7 @@ const PrevArrow = styled.div`
     content: "prev";
     color: var(--color-green);
     font-family: swiper-icons;
-    font-size: var(--font-size-heading-large);
+    font-size: 2rem;
     text-transform: none !important;
     letter-spacing: 0;
     font-feature-settings: ;

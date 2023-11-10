@@ -122,7 +122,7 @@ export const AboutImageContainer = styled.div`
   display: flex;
   background-image: url(/logo_full.png);
   grid-column: 2 / 4;
-  min-height: 33rem;
+  height: 33rem;
   position: relative;
   width: 100%;
   background-size: contain;
@@ -130,7 +130,7 @@ export const AboutImageContainer = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 800px) {
-    min-height: 12rem;
+    height: 12rem;
   }
 `;
 
@@ -147,7 +147,7 @@ export const Special = styled.div`
 export const SpecialImageContainer = styled.a`
   display: flex;
   grid-column: 1 / 3;
-  min-height: 33rem;
+  height: 33rem;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -168,7 +168,7 @@ export const SpecialImageContainer = styled.a`
   }
 
   @media (max-width: 800px) {
-    min-height: 12rem;
+    height: 12rem;
     margin-bottom: 1.5rem;
   }
 `;

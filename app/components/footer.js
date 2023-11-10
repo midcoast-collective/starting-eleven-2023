@@ -16,10 +16,6 @@ const Footer = styled.div`
     flex-direction: column-reverse;
     text-align: center;
   }
-
-  a {
-    margin-left: 1.5rem;
-  }
 `;
 
 export default function FooterComponent() {

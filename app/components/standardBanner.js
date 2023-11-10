@@ -25,6 +25,10 @@ const BannerWrap = styled.div`
     width: var(--font-size-heading-large);
     height: var(--font-size-heading-large);
   }
+
+  @media (max-width: 800px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export default function StandardBanner() {

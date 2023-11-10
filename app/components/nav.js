@@ -18,12 +18,7 @@ const StyledLink = styled.a`
   margin: 0 1rem;
   font-weight: 600;
   font-size: var(--font-size-strong);
-
   text-transform: uppercase;
-
-  &.icon {
-    margin: 0 0.5rem;
-  }
 
   &.last {
     @media (min-width: 800px) {
@@ -45,7 +40,11 @@ export default function NavComponent({ showSocials = false }) {
       {showSocials ? (
         <>
           <span>{"//"}</span>
-          <StyledLink className="last">
+          <StyledLink
+            className="last"
+            href="https://www.instagram.com/startingeleven.us/"
+            target="_blank"
+          >
             <svg
               role="img"
               viewBox="0 0 24 24"

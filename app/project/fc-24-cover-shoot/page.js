@@ -31,7 +31,7 @@ export default function ProjectPage() {
 
   return (
     <main>
-      <Page.Placeholder $image="/project/fc-24-cover-shoot/gallery/4.jpg" />
+      <Page.Placeholder $image="/project/fc-24-cover-shoot/gallery/7.jpg" />
 
       <Project.ContentSection>
         <Wrap>

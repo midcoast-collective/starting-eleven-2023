@@ -47,7 +47,7 @@ export default function ProjectPage() {
 
   return (
     <main>
-      <Page.Placeholder $image="/project/fifa-world-cup-qatar/gallery/8.jpg" />
+      <Page.Placeholder $image="/project/fifa-world-cup-qatar/gallery/cover.jpg" />
 
       <Project.ContentSection>
         <Wrap>
