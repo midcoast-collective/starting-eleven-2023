@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import styled from "styled-components";
 
@@ -22,7 +22,7 @@ export const Scroll = styled.div`
 
   left: 50%;
   right: auto;
-  top: 1rem;
+  bottom: 3rem;
   transform: translateX(-50%);
   transition: opacity 1000ms;
   z-index: 1;
@@ -64,15 +64,36 @@ const ResponsivePlayer = ({
   const [source, setSource] = useState();
   const [ready, setReady] = useState(false);
 
-  // const scrollRef = useRef();
+  const scrollRef = useRef();
 
-  // useEffect(() => {
-  //   const scrollTimer = setTimeout(() => {
-  //     scrollRef.current.classList.add("visible");
-  //   }, 3000);
+  useEffect(() => {
+    function addScrollIcon() {
+      if (!scrollRef.current.classList.contains("visible")) {
+        scrollRef.current.classList.add("visible");
+      }
+    }
 
-  //   return () => clearTimeout(scrollTimer);
-  // }, [scrollRef]);
+    function removeScrollIcon() {
+      if (scrollRef.current.classList.contains("visible")) {
+        scrollRef.current.classList.remove("visible");
+      }
+    }
+
+    function listenToScroll() {
+      if (window.scrollY > 80) {
+        removeScrollIcon();
+      } else {
+        addScrollIcon();
+      }
+    }
+
+    if (ready) {
+      addScrollIcon();
+      window.addEventListener("scroll", listenToScroll);
+    }
+
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, [scrollRef, ready]);
 
   useEffect(() => {
     function setVideoSource() {
@@ -110,9 +131,9 @@ const ResponsivePlayer = ({
         width="100%"
       />
 
-      {/* <Scroll ref={scrollRef}>
+      <Scroll ref={scrollRef}>
         <ScrollSVG />
-      </Scroll> */}
+      </Scroll>
     </PlayerWrapper>
   );
 };
