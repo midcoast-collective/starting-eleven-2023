@@ -5,7 +5,7 @@ import * as Page from "@/app/components/pageComponents";
 import ResponsivePlayer from "@/app/components/responsivePlayer";
 
 export const metadata = {
-  title: "About - Starting Eleven",
+  title: "Starting Eleven - Setting the standard for soccer storytelling",
   description: "Setting the standard for soccer storytelling.",
 };
 
