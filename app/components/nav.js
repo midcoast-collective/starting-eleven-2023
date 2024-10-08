@@ -34,8 +34,10 @@ export default function NavComponent({ showSocials = false }) {
       <span>{"//"}</span>
       <StyledLink href="/#projects">Projects</StyledLink>
       <span>{"//"}</span>
-      <StyledLink className={showSocials ? "" : "last"} href="/contact">
-        Contact
+      <StyledLink href="/contact">Contact</StyledLink>
+      <span>{"//"}</span>
+      <StyledLink className={showSocials ? "" : "last"} href="/studio">
+        LA Studio
       </StyledLink>
       {showSocials ? (
         <>
