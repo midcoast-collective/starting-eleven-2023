@@ -3,7 +3,6 @@
 "use client";
 
 import styled from "styled-components";
-import Wrap from "@/app/components/wrap";
 import LaAboutCompany from "@/app/components/studio/about";
 import LaBookCard from "@/app/components/studio/bookCard";
 import LaIncludedBooking from "@/app/components/studio/includedBooking";
@@ -25,7 +24,7 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 0 5px;
+  padding: 0 1.5rem;
   margin-top: 2rem;
   @media (min-width: 1100px) {
     padding: 0 10em;
@@ -34,6 +33,7 @@ export const GridContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     margin-top:4rem;
   }
+
 `;
 
 export const TitleContainer = styled.div`
@@ -83,16 +83,7 @@ export const Button = styled.p`
   }
 `;
 
-export const ImageContainer = styled.div`
-  padding: 0 5px;
 
-  @media (min-width: 1100px) {
-    padding: 0 10em;
-  }
-    @media (max-width: 768px) {
-    display:none;
-  }
-`;
 
 export const ImageGrid = styled.div`
   display: grid;
@@ -100,14 +91,18 @@ export const ImageGrid = styled.div`
   grid-template-areas:
     "imgOne imgTwo imgThree"
     "imgOne imgFive imgSix";
-  grid-template-columns: 60% 20% 20%;
-
+  grid-template-columns: 50% 25% 25%;
+  padding: 0 1.5rem;
+  @media (min-width: 1100px) {
+    padding: 0 10em;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
   & > :first-child {
     grid-area: imgOne;
-    height: 400px;
   }
   & > :last-child {
-    pointer-events: none;
     position: relative;
   }
 `;
@@ -124,7 +119,7 @@ export const ImageItem = styled.img`
 `;
 export const ViewAllText = styled.span`
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -136,7 +131,7 @@ export const ViewAllText = styled.span`
 `;
 export const ViewAllImage = styled.img`
   position: absolute;
-  top: 40%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -183,7 +178,7 @@ export const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 2em 5px;
+  padding: 2em 1.5rem;
 
   @media (min-width: 1100px) {
     grid-template-columns: 70% 30%;
@@ -296,109 +291,141 @@ export const BookButton = styled.button`
   font-size: 1.2rem;
 `;
 
-import React from "react";
+import React, {  useState } from "react";
+import Modal from "./modal";
 
 function LaStudio() {
   const images = [
-    { id: 1, src: "/project/apple-tv-breakaway/episodes/1.png" },
-    { id: 2, src: "/project/apple-tv-breakaway/episodes/2.png" },
-    { id: 3, src: "/project/apple-tv-breakaway/episodes/3.png" },
-    { id: 4, src: "/project/apple-tv-breakaway/episodes/4.png" },
-    { id: 5, src: "/project/apple-tv-breakaway/episodes/7.png" },
+    { id: 1, src: "/studio/studioGallery1.webp" },
+    { id: 2, src: "/studio/studioGallery2.webp" },
+    { id: 3, src: "/studio/studioGallery3.webp" },
+    { id: 4, src: "/studio/studioGallery4.webp" },
+    { id: 5, src: "/studio/studioGallery5.webp" },
+    { id: 6, src: "/studio/studioGallery6.webp" },
+    { id: 7, src: "/studio/studioGallery1.webp" },
+    { id: 8, src: "/studio/studioGallery2.webp" },
+    { id: 9, src: "/studio/studioGallery3.webp" },
+    { id: 10, src: "/studio/studioGallery4.webp" },
+    { id: 11, src: "/studio/studioGallery5.webp" },
+    { id: 12, src: "/studio/studioGallery6.webp" }
   ];
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  
   return (
+    <>
+    {showModal ? <Modal images={images} onClose={handleCloseModal} /> :
+   
     <div>
-    <LaMobileHero />
+      <LaMobileHero handleClick={handleClick} images={images}/>
       {/* <Wrap> */}
-        <GridContainer>
-          <TitleContainer>
-            <Title>
-              Venice Beach - Cyc-wall, Loft w/ Skylight, Recording Booth, Green
-              Room and more.
-            </Title>
-            <LocationContainer>
-              <Location>Venice, </Location>
-              <Location>Los Angeles, CA </Location>
-            </LocationContainer>
-          </TitleContainer>
+      <GridContainer>
+        <TitleContainer>
+          <Title>
+            Venice Beach - Cyc-wall, Loft w/ Skylight, Recording Booth, Green
+            Room and more.
+          </Title>
+          <LocationContainer>
+            <Location>Venice, </Location>
+            <Location>Los Angeles, CA </Location>
+          </LocationContainer>
+        </TitleContainer>
 
-          <ButtonsContainer>
-            <Button><FavoriteBorderIcon style={{fontSize:"20px"}}/> Share</Button>
-            <Button><IosShareIcon style={{fontSize:"20px"}}/>Save</Button>
-          </ButtonsContainer>
-        </GridContainer>
+        <ButtonsContainer>
+          <Button>
+            <IosShareIcon style={{ fontSize: "20px" }} /> Share
+          </Button>
+          <Button>
+            <FavoriteBorderIcon style={{ fontSize: "20px" }} />
+            Save
+          </Button>
+        </ButtonsContainer>
+      </GridContainer>
 
-        <ImageContainer>
-          <ImageGrid>
-            {images.map((image, id) =>
-              id === images.length - 1 ? (
-                <div key={id}>
-                  <ImageItem style={{filter: "brightness(0.4)"}} src={image.src} />
-                  <ViewAllImage src={"/features/skylight.svg"}/>
-                  <ViewAllText>View All</ViewAllText>
-                </div>
-              ) : (
-                <ImageItem key={id} src={image.src} />
-              )
-            )}
-          </ImageGrid>
-        </ImageContainer>
+      <ImageGrid>
+        {images.slice(0, 5).map((image, id) =>
+          id === 4 ? (
+            <div key={id} onClick={handleClick} style={{ cursor: 'pointer' }}>
+              <ImageItem
+                style={{ filter: "brightness(0.4)" }}
+                src={image.src}
+              />
+              <ViewAllImage src={"/features/skylight.svg"} />
+              <ViewAllText>View All</ViewAllText>
+            </div>
+          ) : (
+            <ImageItem key={id} src={image.src} onClick={handleClick} style={{ cursor: 'pointer' }} />
+          )
+        )}
+      </ImageGrid>
 
-        {/* about space */}
-        <AboutContainer>
-          <TitleContainer>
-            <RatingContainer>
-              <div style={{display:"flex"}}>
-              <StarIcon style={{ marginRight: "4px", fontSize:"22px" }} /> 
+      {/* about space */}
+      <AboutContainer>
+        <TitleContainer>
+          <RatingContainer>
+            <div style={{ display: "flex" }}>
+              <StarIcon style={{ marginRight: "4px", fontSize: "22px" }} />
               <RatingItem style={{ textDecoration: "underline" }}>
-              5.0 (1)
-              </RatingItem></div>
-              <RatingDot>•</RatingDot>
-              <div style={{display:"flex"}}>
-              <PersonIcon style={{ marginRight: "4px", fontSize:"22px" }} /> 
+                5.0 (1)
+              </RatingItem>
+            </div>
+            <RatingDot>•</RatingDot>
+            <div style={{ display: "flex" }}>
+              <PersonIcon style={{ marginRight: "4px", fontSize: "22px" }} />
               <RatingItem>100 people</RatingItem>
-              </div>
-              <RatingDot>•</RatingDot>
-              <div style={{display:"flex"}}>
-              <AccessTimeFilledIcon style={{ marginRight: "4px", fontSize:"22px" }} /> 
+            </div>
+            <RatingDot>•</RatingDot>
+            <div style={{ display: "flex" }}>
+              <AccessTimeFilledIcon
+                style={{ marginRight: "4px", fontSize: "22px" }}
+              />
               <RatingItem>4 hr min</RatingItem>
-              </div>
-              <RatingDot>•</RatingDot>
-              <div style={{display:"flex"}}>
-              <CropIcon style={{ marginRight: "4px", fontSize:"22px" }} /> 
+            </div>
+            <RatingDot>•</RatingDot>
+            <div style={{ display: "flex" }}>
+              <CropIcon style={{ marginRight: "4px", fontSize: "22px" }} />
               <RatingItem>2159 sqft</RatingItem>
-              </div>
-            </RatingContainer>
+            </div>
+          </RatingContainer>
 
           <LaBookMobile />
-            <HR></HR>
+          <HR></HR>
 
-            <MessageContainer>
-              <MessageTitle>
-                <MessageImage src={images[0].src}></MessageImage>
-                <MessageName>Hosted by Devin L.</MessageName>
-              </MessageTitle>
-              <MessageDiv>
+          <MessageContainer>
+            <MessageTitle>
+              <MessageImage src={images[0].src}></MessageImage>
+              <MessageName>Hosted by Devin L.</MessageName>
+            </MessageTitle>
+            <MessageDiv>
               <MessageButton>Message Host</MessageButton>
-              </MessageDiv>
-            </MessageContainer>
-            <HR></HR>
-            <LaAboutCompany />
-            <LaIncludedBooking />
-            <LaLocation />
-            <LaHealth />
-            <HR></HR>
-            <LaReviewComponent />
-          </TitleContainer>
-          <LaBookCard />
-        </AboutContainer>
+            </MessageDiv>
+          </MessageContainer>
+          <HR></HR>
+          <LaAboutCompany />
+          <LaIncludedBooking />
+          <LaLocation />
+          <LaHealth />
+          <HR></HR>
+          <LaReviewComponent />
+        </TitleContainer>
+        <LaBookCard />
+      </AboutContainer>
       {/* </Wrap> */}
       <LaCarousel />
       <Container>
-      <SaveButton>Save</SaveButton>
-      <BookButton>Book Now</BookButton>
-    </Container>
+        <SaveButton>Save</SaveButton>
+        <BookButton>Book Now</BookButton>
+      </Container>
     </div>
+     }
+      </>
   );
 }
 

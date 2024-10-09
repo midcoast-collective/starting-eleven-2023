@@ -56,7 +56,7 @@ export const IconsContainer = styled.div`
 
 `;
 
-export default function LaMobileHero() {
+export default function LaMobileHero({handleClick, images}) {
   const [isMobileView, setIsMobileView] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -75,13 +75,7 @@ export default function LaMobileHero() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const images = [
-    { id: 1, src: "/project/apple-tv-breakaway/episodes/1.png" },
-    { id: 2, src: "/project/apple-tv-breakaway/episodes/2.png" },
-    { id: 3, src: "/project/apple-tv-breakaway/episodes/3.png" },
-    { id: 4, src: "/project/apple-tv-breakaway/episodes/4.png" },
-    { id: 5, src: "/project/apple-tv-breakaway/episodes/7.png" },
-  ];
+  
 
   const totalSlides = images.length;
 
@@ -96,7 +90,7 @@ export default function LaMobileHero() {
           >
             {images.map((image, index) => (
               <SwiperSlide key={image.id}>
-                <img src={image.src} alt={`Slide ${index + 1}`} />
+                <img src={image.src} alt={`Slide ${index + 1}`} onClick={handleClick}/>
               </SwiperSlide>
             ))}
             <IconsContainer isFavorite>

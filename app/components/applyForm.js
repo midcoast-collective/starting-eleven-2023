@@ -138,7 +138,6 @@ export default function ApplyForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Clear error for the field being updated
     if (errors[name]) {
       setErrors((prevErrors) => {
         const { [name]: removedError, ...restErrors } = prevErrors;
@@ -301,7 +300,7 @@ export default function ApplyForm() {
           rows="5"
           value={formData.about}
           onChange={handleChange}
-          placeholder="Let us know about your."
+          placeholder="Let us know about yourself."
           style={{ resize: "none", overflow: "auto" }}
         ></textarea>
         {errors.about && <ErrorMessage>{errors.about}</ErrorMessage>}

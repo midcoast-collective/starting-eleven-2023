@@ -21,7 +21,7 @@ const HeaderWrap = styled.div`
   padding: 0 1.5rem;
   width: 100%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 930px) {
     flex-direction: column;
   }
 `;

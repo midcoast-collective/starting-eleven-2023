@@ -7,7 +7,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 800px) {
+  @media (max-width: 930px) {
     justify-content: space-around;
     padding: 0.75rem 0;
   }
@@ -21,7 +21,7 @@ const StyledLink = styled.a`
   text-transform: uppercase;
 
   &.last {
-    @media (min-width: 800px) {
+    @media (min-width: 9300px) {
       margin-right: 0;
     }
   }

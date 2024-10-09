@@ -114,9 +114,6 @@ const PriceContainer = styled.div`
 
 
 export default function LaCarouselGallery({slide}) {
- 
-console.log(slide);
-
   return (
     <>
     <StyledSwiper
