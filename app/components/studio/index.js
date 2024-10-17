@@ -6,19 +6,11 @@ import styled from "styled-components";
 import LaAboutCompany from "@/app/components/studio/about";
 import LaBookCard from "@/app/components/studio/bookCard";
 import LaIncludedBooking from "@/app/components/studio/includedBooking";
-import LaLocation from "@/app/components/studio/location";
-import LaCarousel from "@/app/components/studio/carousel";
-import LaHealth from "@/app/components/studio/healthSafety";
-import LaReviewComponent from "@/app/components/studio/review";
 import LaMobileHero from "@/app/components/studio/mobileHero";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import IosShareIcon from '@mui/icons-material/IosShare';
-import LaBookMobile from "@/app/components/studio/bookMobile";
-import StarIcon from '@mui/icons-material/Star';
-import PersonIcon from '@mui/icons-material/Person';
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
-import CropIcon from '@mui/icons-material/Crop';
 
+import React, {  useMemo, useState } from "react";
+import Modal from "./modal";
+import Gallery from "@/app/components/gallery";
 
 export const GridContainer = styled.div`
   display: grid;
@@ -174,20 +166,31 @@ export const HR = styled.hr`
   width: 100%;
 `;
 
-export const AboutContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 2em 1.5rem;
+// export const AboutContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   gap: 20px;
+//   padding: 2em 1.5rem;
 
-  @media (min-width: 1100px) {
-    grid-template-columns: 70% 30%;
-  }
-    @media (min-width: 900px) and (max-width: 1100px) {
-    grid-template-columns: 60% 40%;
-  }
-  @media (min-width: 1100px) {
-    padding: 2em 10em;
+//   @media (min-width: 1100px) {
+//     grid-template-columns: 70% 30%;
+//   }
+//     @media (min-width: 900px) and (max-width: 1100px) {
+//     grid-template-columns: 60% 40%;
+//   }
+//   @media (min-width: 1100px) {
+//     padding: 2em 10em;
+//   }
+// `;
+
+export const AboutContainer = styled.div`
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 1em 8.5rem; 
+  width: 100%; 
+
+  @media (max-width: 800px) {
+    padding: 1em 2rem;
   }
 `;
 
@@ -291,24 +294,43 @@ export const BookButton = styled.button`
   font-size: 1.2rem;
 `;
 
-import React, {  useState } from "react";
-import Modal from "./modal";
 
 function LaStudio() {
-  const images = [
-    { id: 1, src: "/studio/studioGallery1.webp" },
-    { id: 2, src: "/studio/studioGallery2.webp" },
-    { id: 3, src: "/studio/studioGallery3.webp" },
-    { id: 4, src: "/studio/studioGallery4.webp" },
-    { id: 5, src: "/studio/studioGallery5.webp" },
-    { id: 6, src: "/studio/studioGallery6.webp" },
-    { id: 7, src: "/studio/studioGallery1.webp" },
-    { id: 8, src: "/studio/studioGallery2.webp" },
-    { id: 9, src: "/studio/studioGallery3.webp" },
-    { id: 10, src: "/studio/studioGallery4.webp" },
-    { id: 11, src: "/studio/studioGallery5.webp" },
-    { id: 12, src: "/studio/studioGallery6.webp" }
-  ];
+  // const images = [
+  //   { id: 1, src: "/studio/studioGallery1.webp" },
+  //   { id: 2, src: "/studio/studioGallery2.webp" },
+  //   { id: 3, src: "/studio/studioGallery3.webp" },
+  //   { id: 4, src: "/studio/studioGallery4.webp" },
+  //   { id: 5, src: "/studio/studioGallery5.webp" },
+  //   { id: 6, src: "/studio/studioGallery6.webp" },
+  //   { id: 7, src: "/studio/studioGallery1.webp" },
+  //   { id: 8, src: "/studio/studioGallery2.webp" },
+  //   { id: 9, src: "/studio/studioGallery3.webp" },
+  //   { id: 10, src: "/studio/studioGallery4.webp" },
+  //   { id: 11, src: "/studio/studioGallery5.webp" },
+  //   { id: 12, src: "/studio/studioGallery6.webp" }
+  // ];
+
+  const images = useMemo(
+    () => [
+      "/project/messi-mania/gallery/1.jpg",
+      "/project/messi-mania/gallery/2.jpg",
+      "/project/messi-mania/gallery/3.jpg",
+      "/project/messi-mania/gallery/4.jpg",
+      "/project/messi-mania/gallery/5.jpg",
+      "/project/messi-mania/gallery/6.jpg",
+      "/project/messi-mania/gallery/7.jpg",
+      "/project/messi-mania/gallery/8.jpg",
+      "/project/messi-mania/gallery/9.jpg",
+      "/project/messi-mania/gallery/10.jpg",
+      "/project/messi-mania/gallery/11.jpg",
+      "/project/messi-mania/gallery/12.jpg",
+      "/project/messi-mania/gallery/13.jpg",
+      "/project/messi-mania/gallery/14.jpg",
+      "/project/messi-mania/gallery/15.jpg",
+    ],
+    []
+  );
   const [showModal, setShowModal] = useState(false);
 
   const handleClick = () => {
@@ -324,9 +346,10 @@ function LaStudio() {
     {showModal ? <Modal images={images} onClose={handleCloseModal} /> :
    
     <div>
-      <LaMobileHero handleClick={handleClick} images={images}/>
+      {/* <LaMobileHero handleClick={handleClick} images={images}/> */}
+      <Gallery handleClick={handleClick} data={images} flag={"modal"}/>
       {/* <Wrap> */}
-      <GridContainer>
+      {/* <GridContainer>
         <TitleContainer>
           <Title>
             Venice Beach - Cyc-wall, Loft w/ Skylight, Recording Booth, Green
@@ -347,29 +370,31 @@ function LaStudio() {
             Save
           </Button>
         </ButtonsContainer>
-      </GridContainer>
+      </GridContainer> */}
 
-      <ImageGrid>
-        {images.slice(0, 5).map((image, id) =>
-          id === 4 ? (
-            <div key={id} onClick={handleClick} style={{ cursor: 'pointer' }}>
-              <ImageItem
-                style={{ filter: "brightness(0.4)" }}
-                src={image.src}
-              />
-              <ViewAllImage src={"/features/skylight.svg"} />
-              <ViewAllText>View All</ViewAllText>
-            </div>
-          ) : (
-            <ImageItem key={id} src={image.src} onClick={handleClick} style={{ cursor: 'pointer' }} />
-          )
-        )}
-      </ImageGrid>
+      {/* <ImageContainer> */}
+        {/* <ImageGrid>
+          {images.slice(0, 5).map((image, id) =>
+            id === 4 ? (
+              <div key={id} onClick={handleClick}>
+                <ImageItem
+                  style={{ filter: "brightness(0.4)" }}
+                  src={image.src}
+                />
+                <ViewAllImage src={"/features/skylight.svg"} />
+                <ViewAllText>View All</ViewAllText>
+              </div>
+            ) : (
+              <ImageItem key={id} src={image.src} onClick={handleClick} style={{ cursor: 'pointer' }} />
+            )
+          )}
+        </ImageGrid> */}
+      {/* </ImageContainer> */}
 
       {/* about space */}
       <AboutContainer>
         <TitleContainer>
-          <RatingContainer>
+          {/* <RatingContainer>
             <div style={{ display: "flex" }}>
               <StarIcon style={{ marginRight: "4px", fontSize: "22px" }} />
               <RatingItem style={{ textDecoration: "underline" }}>
@@ -393,10 +418,10 @@ function LaStudio() {
               <CropIcon style={{ marginRight: "4px", fontSize: "22px" }} />
               <RatingItem>2159 sqft</RatingItem>
             </div>
-          </RatingContainer>
+          </RatingContainer> */}
 
-          <LaBookMobile />
-          <HR></HR>
+          {/* <LaBookMobile /> */}
+          {/* <HR></HR>
 
           <MessageContainer>
             <MessageTitle>
@@ -407,25 +432,25 @@ function LaStudio() {
               <MessageButton>Message Host</MessageButton>
             </MessageDiv>
           </MessageContainer>
-          <HR></HR>
+          <HR></HR> */}
           <LaAboutCompany />
           <LaIncludedBooking />
-          <LaLocation />
-          <LaHealth />
-          <HR></HR>
-          <LaReviewComponent />
+          {/* <LaLocation /> */}
+          {/* <LaHealth /> */}
+          {/* <HR></HR>
+          <LaReviewComponent /> */}
         </TitleContainer>
         <LaBookCard />
       </AboutContainer>
       {/* </Wrap> */}
-      <LaCarousel />
-      <Container>
+      {/* <LaCarousel /> */}
+      {/* <Container>
         <SaveButton>Save</SaveButton>
         <BookButton>Book Now</BookButton>
-      </Container>
+      </Container> */}
     </div>
-     }
-      </>
+    }
+    </>
   );
 }
 

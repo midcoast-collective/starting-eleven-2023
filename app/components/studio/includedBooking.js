@@ -3,32 +3,19 @@
 "use client";
 
 import styled from "styled-components";
-import { useState, useRef, useEffect } from "react";
 
 const Heading = styled.h1`
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
 `;
 
 const Container = styled.div`
-  overflow: hidden;
   transition: max-height 0.3s ease;
   position: relative;
   background: white;
   margin-top: 4rem;
-  ${({ showAll }) =>
-    !showAll &&
-    `
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 45px;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    }
-  `}
+
 `;
 
 const ItemsList = styled.ul`
@@ -71,9 +58,9 @@ const IconImg = styled.img`
   align-self:center;
 `;
 const LaIncludedBooking = () => {
-  const [showAll, setShowAll] = useState(false);
-  const [maxHeight, setMaxHeight] = useState("0px");
-  const containerRef = useRef(null);
+  // const [showAll, setShowAll] = useState(false);
+  // const [maxHeight, setMaxHeight] = useState("0px");
+  // const containerRef = useRef(null);
 
   const bookingDetails = {
     Amenities: [
@@ -102,24 +89,24 @@ const LaIncludedBooking = () => {
     ],
   };
 
-  useEffect(() => {
-    if (containerRef.current) {
-      const totalHeight = containerRef.current.scrollHeight;
-      const heightToShow = showAll ? totalHeight : totalHeight * 0.24;
-      setMaxHeight(`${heightToShow}px`);
-    }
-  }, [showAll]);
+  // useEffect(() => {
+  //   if (containerRef.current) {
+  //     const totalHeight = containerRef.current.scrollHeight;
+  //     const heightToShow = showAll ? totalHeight : totalHeight * 0.24;
+  //     setMaxHeight(`${heightToShow}px`);
+  //   }
+  // }, [showAll]);
 
-  const handleToggle = () => {
-    setShowAll(!showAll);
-  };
+  // const handleToggle = () => {
+  //   setShowAll(!showAll);
+  // };
 
   return (
     <>
       <Container
-        style={{ maxHeight: maxHeight }}
-        ref={containerRef}
-        showAll={showAll}
+        // style={{ maxHeight: maxHeight }}
+        // ref={containerRef}
+        // showAll={showAll}
       >
         <Heading>Included in your booking</Heading>
         {Object.entries(bookingDetails).map(([title, items]) => (
@@ -135,11 +122,10 @@ const LaIncludedBooking = () => {
             </ItemsList>
           </div>
         ))}
-        <p style={{marginTop:"3rem"}}>Don't see an amenity you're looking for? Ask the host, Devin</p>
       </Container>
-      <ShowAllButton onClick={handleToggle}>
+      {/* <ShowAllButton onClick={handleToggle}>
         {showAll ? "Show less" : "Show all"}
-      </ShowAllButton>
+      </ShowAllButton> */}
     </>
   );
 };

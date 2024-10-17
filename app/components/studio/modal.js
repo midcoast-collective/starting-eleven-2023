@@ -12,7 +12,7 @@ const Modal = ({ images, onClose }) => {
 
     const handleClick = (index) => {
         setInitialSlide(index);
-      setShowModalSlider(true);
+        setShowModalSlider(true);
     };
   
     const handleCloseModal = () => {
@@ -45,8 +45,8 @@ const Modal = ({ images, onClose }) => {
         </ModalHeader>
         
         <ImageGrid>
-          {images.map((image, index) => (
-            <ImageItem key={index} src={image.src} onClick={() => handleClick(index)} />
+          {images.map((image, i) => (
+            <ImageItem key={i} src={image} onClick={() => handleClick(i)} />
           ))}
         </ImageGrid>
       </ModalContent>

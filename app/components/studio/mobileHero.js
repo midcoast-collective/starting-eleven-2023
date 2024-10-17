@@ -81,7 +81,7 @@ export default function LaMobileHero({handleClick, images}) {
 
   return (
     <>
-      {isMobileView && (
+      {/* {isMobileView && ( */}
         <Gallery>
           <Swiper
             spaceBetween={24}
@@ -93,19 +93,19 @@ export default function LaMobileHero({handleClick, images}) {
                 <img src={image.src} alt={`Slide ${index + 1}`} onClick={handleClick}/>
               </SwiperSlide>
             ))}
-            <IconsContainer isFavorite>
+            {/* <IconsContainer isFavorite>
               <FavoriteBorderIcon />
             </IconsContainer>
             <IconsContainer>
               <IosShareIcon />
-              </IconsContainer>
+              </IconsContainer> */}
 
             <SlideCounter>
               {currentSlide}/{totalSlides}{" "}
             </SlideCounter>
           </Swiper>
         </Gallery>
-      )}
+      {/* )} */}
     </>
   );
 }

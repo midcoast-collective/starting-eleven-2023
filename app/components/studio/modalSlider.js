@@ -48,10 +48,10 @@ const ModalSlider = ({ images, onClose, initialSlide }) => {
           initialSlide={initialSlide}
           onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
           >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
+          {images.map((image, i) => (
+            <SwiperSlide key={i}>
               <ImageContainer>
-                <ImageItem src={image.src} alt={`Image ${index + 1}`} />
+                <ImageItem src={image} alt={`Image ${i + 1}`} />
               </ImageContainer>
             </SwiperSlide>
           ))}

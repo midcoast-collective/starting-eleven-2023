@@ -101,9 +101,7 @@ const CloseButton = styled.button`
 const CardContainer = styled.div`
   background: transparent;
   border: 1px solid #d1d3db;
-  @media (max-width: 900px) {
-    display: none;  
-    }
+  margin: 2rem 0;
 `;
 
 const TitleBook = styled.p`

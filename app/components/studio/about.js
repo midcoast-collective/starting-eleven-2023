@@ -17,11 +17,13 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Heading = styled.h1`
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 2rem;
+  text-align:center;
 `;
 
 const Paragraph = styled.p`
   margin-bottom: 15px;
+  line-height:2rem;
   overflow-wrap: break-word;
   font-size: 15px;
 `;
