@@ -64,7 +64,7 @@ const NextArrow = styled(PrevArrow)`
   }
 `;
 
-export default function GalleryComponent({ data }) {
+export default function GalleryComponent({ data, flag, handleClick }) {
   const [swiperRef, setSwiperRef] = useState();
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
@@ -88,21 +88,21 @@ export default function GalleryComponent({ data }) {
         }}
         onSwiper={setSwiperRef}
         spaceBetween={24}
-        slidesPerView={1.1}
+        slidesPerView={flag == "modal" ? 1 : 1.1}
         modules={[Scrollbar]}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         breakpoints={{
           // max-width
           800: {
-            slidesPerView: 1.1,
+            slidesPerView: flag == "modal" ? 1 : 1.1,
             spaceBetween: 48,
           },
         }}
       >
         {data.map((image) => (
           <SwiperSlide key={image}>
-            <img src={image} alt="" />
+            <img src={image} alt="" onClick={handleClick} />
           </SwiperSlide>
         ))}
       </Swiper>
