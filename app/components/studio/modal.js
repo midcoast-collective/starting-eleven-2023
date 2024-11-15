@@ -105,7 +105,9 @@ const ImageGrid = styled.div`
 
 const ImageItem = styled.img`
   width: 100%;
+  height: 350px;
   cursor: pointer;
+  object-fit: fill;
 `;
 export const ButtonsContainer = styled.div`
   display: flex;

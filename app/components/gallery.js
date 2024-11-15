@@ -28,8 +28,9 @@ export const Gallery = styled.section`
 
   .swiper-slide img {
     user-select: none;
-    height: auto;
     width: 100%;
+    height: ${({ flag }) => (flag === "modal" ? "500px" : "auto")}; /* Conditionally set height */
+    object-fit: cover;
   }
 `;
 
@@ -78,7 +79,7 @@ export default function GalleryComponent({ data, flag, handleClick }) {
   }, [swiperRef]);
 
   return (
-    <Gallery>
+    <Gallery flag={flag}>
       <PrevArrow onClick={handlePrevious} $visible={!isBeginning} />
 
       <Swiper
