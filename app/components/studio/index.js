@@ -75,8 +75,6 @@ export const Button = styled.p`
   }
 `;
 
-
-
 export const ImageGrid = styled.div`
   display: grid;
   grid-gap: 0.5em;
@@ -109,6 +107,7 @@ export const ImageItem = styled.img`
     filter: brightness(0.7);
   }
 `;
+
 export const ViewAllText = styled.span`
   position: absolute;
   top: 65%;
@@ -121,6 +120,7 @@ export const ViewAllText = styled.span`
   pointer-events: none;
   filter: brightness(3);
 `;
+
 export const ViewAllImage = styled.img`
   position: absolute;
   top: 47%;
@@ -132,6 +132,7 @@ export const ViewAllImage = styled.img`
   pointer-events: none;
   filter: brightness(3);
 `;
+
 export const RatingContainer = styled.div`
   display: grid; 
   grid-template-columns: repeat(7, 1fr); 
@@ -157,7 +158,6 @@ export const RatingDot = styled.span`
    display:none;
 }
 `;
-
 
 export const HR = styled.hr`
   margin: 10px 0;
@@ -203,6 +203,7 @@ export const MessageContainer = styled.div`
     gap: 20px;
   }
 `;
+
 export const MessageTitle = styled.div`
   display: flex;
   align-items: center;
@@ -229,13 +230,14 @@ export const MessageImage = styled.img`
     height: 90px;
   }
 `;
+
 export const MessageDiv = styled.div`
-    display:flex;
-    @media (max-width: 900px) {
+  display: flex;
+  @media (max-width: 900px) {
     justify-content: center;  
-    }
-}
+  }
 `;
+
 export const MessageButton = styled.button`
   border: 1px solid #d1d3db;;
   color: var(--color-black);
@@ -248,10 +250,9 @@ export const MessageButton = styled.button`
     color: #121212;
     background-color: #e6e6e6;
     border-color: #afb2c0;
-}
-
-}
+  }
 `;
+
 export const Container = styled.div`
   position: fixed;
   bottom: 0;
@@ -264,7 +265,7 @@ export const Container = styled.div`
   z-index:1000;
   @media (min-width: 768px) {
     display: none;  
-    }
+  }
 `;
 
 export const SaveButton = styled.button`
