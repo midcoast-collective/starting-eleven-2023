@@ -13,6 +13,7 @@ export default async function AboutPage() {
 
   try {
     const response = await client.getEntries({ content_type: "projects" });
+    
     data = response?.items;
   } catch (error) {
     console.error("Error fetching projects:", error);
@@ -68,6 +69,7 @@ export default async function AboutPage() {
           {!!data?.length &&
             data
               .filter((project) => project?.fields?.featured)
+              .sort((a, b) => a?.fields?.index - b?.fields?.index)
               .map((project) => (
                 <Page.Special key={project?.fields?.title}>
                   <Page.SpecialImageContainer
@@ -116,6 +118,7 @@ export default async function AboutPage() {
             {!!data?.length &&
               data
                 .filter((project) => !project?.fields?.featured)
+                .sort((a, b) => a?.fields?.index - b?.fields?.index)
                 .map((pro) => (
                   <Page.Project key={pro?.title}>
                     <Page.ProjectImageContainer
