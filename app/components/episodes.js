@@ -23,8 +23,6 @@ export const Episodes = styled.section`
     background-color: var(--color-gray);
     height: 100%;
   }
-
-  
 `;
 
 const PrevArrow = styled.div`
@@ -57,6 +55,7 @@ const NextArrow = styled(PrevArrow)`
     content: "next";
   }
 `;
+
 export const Episode = styled.a`
   background-color: var(--color-gray);
   border-radius: 8px;
@@ -89,7 +88,6 @@ export default function EpisodesComponent({ data }) {
   const [swiperRef, setSwiperRef] = useState();
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-console.log("first", data);
 
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
@@ -111,7 +109,6 @@ console.log("first", data);
         onSwiper={setSwiperRef}
         spaceBetween={24}
         slidesPerView={1.1}
-        // loop={true} 
       >
         {!!data?.length && data.map((episode) => (
           <SwiperSlide key={episode?.image}>

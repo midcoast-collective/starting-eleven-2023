@@ -13,7 +13,6 @@ export default async function AboutPage() {
 
   try {
     const response = await client.getEntries({ content_type: "projects" });
-    
     data = response?.items;
   } catch (error) {
     console.error("Error fetching projects:", error);
