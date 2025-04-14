@@ -2,8 +2,25 @@
 
 import Wrap from "@/app/components/wrap";
 import * as Page from "@/app/components/pageComponents";
+import { useEffect, useState } from "react";
+import client from "@/utils/contentful";
 
-export default function ProjectsComponent({ data }) {
+export default function ProjectsComponent() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await client.getEntries({ content_type: "projects" });
+        setData(response.items || []);
+      } catch (err) {
+        console.error("Error fetching projects:", err);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
     <Wrap>
       <section id="projects">

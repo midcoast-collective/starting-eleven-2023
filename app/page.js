@@ -1,7 +1,6 @@
 import Wrap from "@/app/components/wrap";
 import * as Page from "@/app/components/pageComponents";
 import ResponsivePlayer from "@/app/components/responsivePlayer";
-import client from "@/utils/contentful";
 import ProjectsComponent from "@/app/components/projects";
 
 export const metadata = {
@@ -10,15 +9,6 @@ export const metadata = {
 };
 
 export default async function AboutPage() {
-  let data = [];
-
-  try {
-    const response = await client.getEntries({ content_type: "projects" });
-    data = response?.items;
-  } catch (error) {
-    console.error("Error fetching projects:", error);
-  }
-
   return (
     <main>
       <section>
@@ -62,7 +52,7 @@ export default async function AboutPage() {
         </Wrap>
       </Page.GrayBackground>
 
-      <ProjectsComponent data={data} />
+      <ProjectsComponent />
     </main>
   );
 }
