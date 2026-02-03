@@ -19,9 +19,9 @@ export default function ContactPage() {
           <Contact.Locations>
             <div>
               <p>
-                730 Minnesota Ave. STE C
+                1800 Genessee Street. STE 102
                 <br />
-                Kansas City, KS 66101
+                Kansas City, MO 64102
                 <br />
                 <a
                   href="https://maps.app.goo.gl/9i745UvyVXKSAUvA9"
